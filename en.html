@@ -1493,6 +1493,24 @@
   .ansambl .colR.expanded .ansambl-toggle .arr-down{ transform: rotate(180deg) }
   .ansambl .ansambl-expandable{ display: contents }
 
+  /* -------- SUNDAY MASS -------- */
+  section.misa{ background: #ebe1cf; padding-top: clamp(40px, 5vw, 64px); padding-bottom: clamp(40px, 5vw, 64px) }
+  section.misa .eyebrow{ color: #8a6b3c }
+  section.misa .section-title{ color: #1a1310 }
+  section.misa .lead{ color: #2a1f15 }
+  .misa-inner{ max-width: 880px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: clamp(32px, 6vw, 80px); align-items: center }
+  .misa-time{ text-align: center; border-right: 1px solid rgba(107,78,38,0.28); padding-right: clamp(32px, 6vw, 80px) }
+  .misa-num{ font-family: var(--display); font-size: clamp(64px, 8vw, 96px); line-height: 1; color: #6b4e26 }
+  .misa-num span{ font-size: 0.4em; margin-left: 2px }
+  .misa-day{ font-family: var(--serif); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8a6b3c; margin-top: 8px }
+  .misa-copy{ text-align: left }
+  .misa-inner .btn{ margin-top: 28px }
+  @media (max-width: 640px){
+    .misa-inner{ grid-template-columns: 1fr; text-align: center }
+    .misa-time{ border-right: none; padding-right: 0; border-bottom: 1px solid rgba(107,78,38,0.28); padding-bottom: 28px }
+    .misa-copy{ text-align: center }
+  }
+
   /* -------- KONCERTI -------- */
   section.koncerti{
     background: var(--ink);
@@ -2413,6 +2431,30 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- ===================== SUNDAY MASS ===================== -->
+<section class="misa pad-y" id="misa" data-screen-label="03b Sunday Mass">
+  <div class="wrap">
+    <div class="misa-inner">
+      <div class="misa-time">
+        <div class="misa-num">11<span>am</span></div>
+        <div class="misa-day">Sundays</div>
+      </div>
+      <div class="misa-copy">
+        <div class="eyebrow reveal"><span class="dot"></span>Every Sunday</div>
+        <h2 class="section-title display reveal" style="margin-top: 20px">
+          Mass at <em>St. Mark's Church.</em>
+        </h2>
+        <p class="lead reveal" style="margin-top: 24px">
+          Every Sunday the choir sings during the holy mass with music of
+          sacred tradition — from classical mass compositions to works by
+          Croatian church composers.
+        </p>
+        <a class="btn" href="https://zupa-svmarkaev.hr" target="_blank" rel="noopener">St. Mark's Parish <span class="arr"></span></a>
+      </div>
+    </div>
   </div>
 </section>
 
