@@ -1,0 +1,2924 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Cantores Sancti Marci — Oratorio Choir of St. Mark's Church, Zagreb</title>
+<meta name="description" content="Cantores Sancti Marci — oratorio choir of St. Mark's Church in Zagreb, dedicated to sacred and early music. Concerts, liturgical performances, and auditions for the 2026 season." />
+<link rel="canonical" href="https://cantoressanctimarci.hr/en.html" />
+<link rel="alternate" hreflang="hr" href="https://cantoressanctimarci.hr/" />
+<link rel="alternate" hreflang="en" href="https://cantoressanctimarci.hr/en.html" />
+<link rel="alternate" hreflang="x-default" href="https://cantoressanctimarci.hr/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Cantores Sancti Marci" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="Cantores Sancti Marci — Oratorio Choir of St. Mark's Church, Zagreb" />
+<meta property="og:description" content="Cantores Sancti Marci — oratorio choir of St. Mark's Church in Zagreb, dedicated to sacred and early music. Concerts, liturgical performances, and auditions for the 2026 season." />
+<meta property="og:image" content="https://cantoressanctimarci.hr/media/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Cantores Sancti Marci — koncert u Crkvi svetog Marka" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Cantores Sancti Marci — Oratorio Choir of St. Mark's Church, Zagreb" />
+<meta name="twitter:description" content="Cantores Sancti Marci — oratorio choir of St. Mark's Church in Zagreb, dedicated to sacred and early music. Concerts, liturgical performances, and auditions for the 2026 season." />
+<meta name="twitter:image" content="https://cantoressanctimarci.hr/media/og-image.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  /* -------- design tokens -------- */
+  :root{
+    /* PERGAMENA — light parchment ground, deep umber type.
+       Hero re-scopes these to the dark cinematic plate. */
+    --ink:        #efe6d0;   /* page ground */
+    --umber:      #e8ddc3;
+    --umber-2:    #e0d5b8;
+    --umber-3:    #d7c9a8;
+    --stone:      #b89e72;
+    --parchment:  #2a1f15;   /* body text */
+    --ivory:      #1a1310;   /* heading text */
+    --ivory-soft: #4a3a28;   /* muted text */
+    --gold:       #6b4e26;  /* darkened from #8a6b3c for AA contrast on parchment */
+    --gold-warm:  #a07a3f;
+    --gold-deep:  #6b4e26;
+    --burgundy:   #5d2730;
+    --burgundy-2: #3a1820;
+    --olive:      #4a4530;
+
+    --serif: "Cormorant Garamond", "EB Garamond", "Times New Roman", serif;
+    --body:  "EB Garamond", "Cormorant Garamond", "Times New Roman", serif;
+
+    --maxw: 1320px;
+    --gut: clamp(20px, 4vw, 64px);
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0 }
+  html{ scroll-behavior:smooth; background:var(--ink) }
+  body{
+    font-family: var(--body);
+    color: var(--parchment);
+    background: var(--ink);
+    line-height: 1.55;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x:hidden;
+  }
+
+  /* canvas grain overlaid on whole site for painterly tactility */
+  :root{ --grain-opacity: 0.05; --title-italic-style: italic }
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    pointer-events:none;
+    z-index: 9999;
+    opacity: var(--grain-opacity);
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.88  0 0 0 0 0.7  0 0 0 0.7 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  ::selection{ background: var(--burgundy); color: var(--ivory) }
+
+  a{ color: inherit; text-decoration: none }
+
+  /* -------- typography -------- */
+  .display{
+    font-family: var(--serif);
+    font-weight: 300;
+    letter-spacing: -0.015em;
+    line-height: 0.95;
+  }
+  .display em{ font-style: var(--title-italic-style); font-weight: 300 }
+  .italic{ font-style: italic; font-weight: 300 }
+  h1.title{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(56px, 9.6vw, 168px);
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    color: var(--ivory);
+  }
+  h2.section-title{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(40px, 5.6vw, 96px);
+    line-height: 1.0;
+    letter-spacing: -0.015em;
+    color: var(--ivory);
+  }
+  h3{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(22px, 2.0vw, 30px);
+    letter-spacing: 0;
+    color: var(--ivory);
+  }
+  p{
+    font-family: var(--body);
+    font-size: 19px;
+    line-height: 1.62;
+    color: var(--parchment);
+  }
+  p.lead{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(22px, 1.9vw, 28px);
+    line-height: 1.4;
+    color: var(--ivory-soft);
+    letter-spacing: 0.002em;
+  }
+  .eyebrow{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .eyebrow .dot{
+    display:inline-block; width:5px; height:5px; border-radius:50%;
+    background: var(--gold); margin: 0 0.8em 2px 0;
+    vertical-align: middle;
+  }
+  .smallcaps{
+    font-family: var(--serif);
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--ivory-soft);
+  }
+
+  /* gold rule */
+  .rule{
+    display:block; width: 100%; height:1px;
+    background: linear-gradient(90deg, transparent, var(--gold-deep) 12%, var(--gold-deep) 88%, transparent);
+    opacity: 0.55;
+  }
+  .rule.short{ width:64px; background: var(--gold); opacity: 0.7 }
+
+  /* -------- layout -------- */
+  .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 var(--gut) }
+  section{ position: relative }
+  .pad-y{ padding: clamp(80px, 12vw, 180px) 0 }
+
+  /* -------- accessibility -------- */
+  .skip-link{
+    position: fixed; top: 12px; left: 12px; z-index: 2000;
+    background: var(--gold, #c5a572); color: #1a1310;
+    padding: 12px 20px; border-radius: 4px;
+    font-family: var(--serif); font-size: 15px; letter-spacing: 0.04em;
+    text-decoration: none;
+    transform: translateY(-160%); transition: transform .2s ease;
+  }
+  .skip-link:focus{ transform: translateY(0); outline: none }
+  a:focus-visible, button:focus-visible,
+  input:focus-visible, [tabindex]:focus-visible{
+    outline: 2px solid var(--gold, #c5a572);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .skip-link{ transition: none }
+  }
+
+  /* -------- nav -------- */
+  nav.top{
+    position: fixed; inset: 0 0 auto 0;
+    z-index: 100;    padding: 22px var(--gut);
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    color: #f4ecd8;
+    --nav-text: #f4ecd8;
+    --nav-text-soft: #d8cdb5;
+    --nav-text-accent: #c5a572;
+    transition: background-color .6s ease, backdrop-filter .6s ease, padding .4s ease, color .4s ease;
+  }
+  nav.top.scrolled{
+    --nav-text: var(--ivory);
+    --nav-text-soft: var(--ivory-soft);
+    --nav-text-accent: var(--gold);
+    background: rgba(239,230,208,0.82);
+    backdrop-filter: blur(8px) saturate(1.05);
+    -webkit-backdrop-filter: blur(8px) saturate(1.05);
+    padding: 14px var(--gut);
+    border-bottom: 1px solid rgba(138,107,60,0.28);
+  }
+  nav.top.menu-open{ z-index: 1000; background: transparent !important; backdrop-filter: none; border-bottom: none }
+  nav.top.menu-open .brand{ color: var(--ivory) }
+  nav.top .hamburger{
+    display: none;
+    width: 44px; height: 44px;
+    background: transparent;
+    border: 1px solid rgba(197,165,114,0.45);
+    border-radius: 2px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+    justify-self: end;
+    transition: border-color .3s ease, background .3s ease;
+    z-index: 1001;
+    position: relative;
+  }
+  nav.top .hamburger span{
+    display:block;
+    width: 20px; height: 1px;
+    background: var(--nav-text);
+    transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .25s ease, background .3s;
+  }
+  nav.top .hamburger:hover{ border-color: var(--nav-text-accent) }
+  nav.top.menu-open .hamburger span{ background: var(--ivory) }
+  nav.top.menu-open .hamburger span:nth-child(1){ transform: translateY(6px) rotate(45deg) }
+  nav.top.menu-open .hamburger span:nth-child(2){ opacity: 0 }
+  nav.top.menu-open .hamburger span:nth-child(3){ transform: translateY(-6px) rotate(-45deg) }
+
+  /* mobile menu overlay */
+  .mobile-menu{
+    position: fixed; inset: 0;
+    background: var(--ink);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px var(--gut) 40px;
+  }
+  .mobile-menu.open{ opacity: 1; pointer-events: auto }
+  .mobile-menu .mm-inner{
+    width: 100%;
+    max-width: 480px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform .6s cubic-bezier(.2,.7,.2,1) .1s, opacity .5s ease .1s;
+  }
+  .mobile-menu.open .mm-inner{ transform: translateY(0); opacity: 1 }
+  .mobile-menu .mm-eyebrow{
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 32px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(197,165,114,0.18);
+  }
+  .mobile-menu ul{
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex; flex-direction: column;
+  }
+  .mobile-menu li{
+    border-bottom: 1px solid rgba(197,165,114,0.10);
+  }
+  .mobile-menu li a{
+    display: block;
+    padding: 22px 0;
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(26px, 6vw, 36px);
+    color: var(--ivory);
+    letter-spacing: -0.005em;
+    line-height: 1;
+    transition: color .3s, padding-left .35s cubic-bezier(.2,.7,.2,1);
+    position: relative;
+  }
+  .mobile-menu li a::before{
+    content: "";
+    position: absolute;
+    left: 0; top: 50%;
+    width: 0; height: 1px;
+    background: var(--gold);
+    transition: width .35s cubic-bezier(.2,.7,.2,1);
+  }
+  .mobile-menu li a:hover,
+  .mobile-menu li a:active{
+    color: var(--gold);
+    padding-left: 28px;
+  }
+  .mobile-menu li a:hover::before,
+  .mobile-menu li a:active::before{ width: 18px }
+  .mobile-menu .mm-footer{
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(197,165,114,0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ivory-soft);
+  }
+  .mobile-menu .mm-footer .lang-toggle{
+    display: inline-flex;
+    border: 1px solid rgba(197,165,114,0.45);
+    border-radius: 40px;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+  }
+  .mobile-menu .mm-footer .lang-toggle .seg{
+    min-width: 60px;
+    padding: 13px 22px;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    color: var(--ivory-soft);
+    transition: background .25s ease, color .25s ease;
+  }
+  .mobile-menu .mm-footer .lang-toggle .seg.active{
+    background: var(--gold);
+    color: #1a1310;
+  }
+  .mobile-menu .mm-footer .lang-toggle a.seg:active{
+    background: rgba(197,165,114,0.2);
+  }
+
+  nav.top .brand{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--nav-text);
+  }
+  nav.top .brand .mark{
+    display:inline-block; margin-right: 12px; color: var(--nav-text-accent);
+    font-style: italic; letter-spacing: 0;
+  }
+  nav.top ul{
+    list-style:none; display:flex; gap: clamp(20px, 2.4vw, 38px);
+    justify-content:center;
+  }
+  nav.top ul a{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--nav-text-soft);
+    padding: 6px 2px;
+    position:relative;
+    transition: color .3s;
+  }
+  nav.top ul a::after{
+    content:""; position:absolute; left:0; right:100%; bottom: 0;
+    height:1px; background: var(--nav-text-accent); transition: right .35s ease;
+  }
+  nav.top ul a:hover{ color: var(--nav-text) }
+  nav.top ul a:hover::after{ right: 0 }
+  nav.top .meta{
+    display:flex; justify-content:flex-end; align-items:center; gap: 22px;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--nav-text-soft);
+  }
+  nav.top .meta .lang{ color: var(--nav-text-accent) }
+  nav.top .meta .lang span{ color: var(--nav-text-soft); margin: 0 4px }
+
+  /* -------- buttons -------- */
+  .btn{
+    display:inline-flex; align-items:center; gap:14px;
+    padding: 16px 26px;
+    border: 1px solid rgba(197,165,114,0.45);
+    color: var(--ivory);
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    background: rgba(255,250,240,0.5);
+    backdrop-filter: blur(4px);
+    transition: all .4s ease;
+    cursor:pointer;
+  }
+  .btn .arr{
+    display:inline-block; width: 22px; height:1px; background: var(--gold);
+    position:relative; transition: width .4s ease;
+  }
+  .btn .arr::after{
+    content:""; position:absolute; right:-1px; top:-3px;
+    width: 7px; height:7px; border-top:1px solid var(--gold); border-right:1px solid var(--gold);
+    transform: rotate(45deg);
+  }
+  .btn:hover{ border-color: var(--burgundy); background: rgba(93,39,48,0.10); color: var(--ivory) }
+  .btn:hover .arr{ width: 34px }
+  .btn.solid{
+    background: #2a1f15; color: var(--ink); border-color: #2a1f15;
+  }
+  .btn.solid .arr{ background: var(--gold-warm) }
+  .btn.solid .arr::after{ border-color: var(--gold-warm) }
+  .btn.solid:hover{ background: var(--burgundy); border-color: var(--burgundy); color: var(--ink) }
+
+  /* -------- reusable: chiaroscuro plate -------- */
+  /* a painterly placeholder: dark canvas, candlelight, optional vault */
+  .plate{
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(120% 80% at 50% 110%, rgba(197,165,114,0.05), transparent 55%),
+      radial-gradient(60% 90% at 50% 35%, rgba(212,184,134,0.18), rgba(20,16,12,0) 60%),
+      linear-gradient(180deg, #0e0a07 0%, #1a1310 50%, #0a0807 100%);
+    color: var(--ivory-soft);
+    isolation: isolate;
+  }
+  .plate::before{
+    /* fresco / parchment haze */
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(80% 60% at 30% 20%, rgba(93,39,48,0.18), transparent 70%),
+      radial-gradient(50% 50% at 80% 80%, rgba(74,69,48,0.15), transparent 70%);
+    mix-blend-mode: screen;
+    z-index: 1;
+  }
+  .plate::after{
+    /* heavy grain inside the plate */
+    content:"";
+    position:absolute; inset:0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.9  0 0 0 0 0.78  0 0 0 0 0.6  0 0 0 0.9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity: 0.14;
+    mix-blend-mode: overlay;
+    z-index: 2;
+    pointer-events:none;
+  }
+  .plate > .pcontent{ position: relative; z-index: 3 }
+
+  /* photo-backed plate — drops a real image in while keeping the
+     painterly grain + warm vignette so it sits within the system */
+  .plate-photo{
+    background-size: cover;
+    background-position: center;
+    background-color: #0a0807;
+  }
+  .plate-photo.flip-x{ transform: scaleX(-1) }
+  .plate-photo.flip-x .cap{ transform: scaleX(-1) }
+  .plate-photo::before{
+    background:
+      radial-gradient(75% 90% at 50% 45%, transparent 35%, rgba(10,8,7,0.55) 100%),
+      linear-gradient(180deg, rgba(10,8,7,0.10) 0%, rgba(10,8,7,0) 30%, rgba(10,8,7,0.45) 100%);
+    mix-blend-mode: multiply;
+  }
+  .plate-photo::after{
+    opacity: 0.18;
+  }
+
+  /* candle highlight overlay */
+  .plate-candle::before{
+    background:
+      radial-gradient(35% 45% at 50% 58%, rgba(255,210,140,0.35), rgba(255,180,110,0.08) 30%, transparent 65%),
+      radial-gradient(70% 60% at 50% 30%, rgba(120,70,40,0.18), transparent 70%);
+  }
+  /* vault arch silhouette */
+  .plate-vault::before{
+    background:
+      radial-gradient(45% 55% at 50% 65%, rgba(212,184,134,0.22), transparent 60%);
+  }
+  .plate-vault .vault{
+    position:absolute; left:50%; bottom:0; transform: translateX(-50%);
+    width: 88%; height: 78%;
+    border-radius: 50% 50% 0 0 / 60% 60% 0 0;
+    background:
+      radial-gradient(80% 60% at 50% 90%, rgba(255,210,140,0.13), transparent 60%),
+      linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.85) 100%);
+    border: 1px solid rgba(197,165,114,0.18);
+    border-bottom: none;
+    box-shadow: inset 0 -60px 80px rgba(0,0,0,0.7);
+    z-index: 1;
+  }
+  .plate-vault .vault::before{
+    /* inner arch */
+    content:"";
+    position:absolute; left:50%; bottom:0; transform: translateX(-50%);
+    width: 60%; height: 70%;
+    border-radius: 50% 50% 0 0 / 65% 65% 0 0;
+    background: linear-gradient(180deg, rgba(10,8,7,0.0), rgba(10,8,7,0.9));
+    border: 1px solid rgba(197,165,114,0.12);
+    border-bottom: none;
+  }
+  .plate-vault .vault::after{
+    /* keystone glow */
+    content:"";
+    position:absolute; left:50%; top:14%; transform: translateX(-50%);
+    width:140px; height:140px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,210,140,0.35), transparent 60%);
+    filter: blur(2px);
+  }
+
+  /* manuscript page */
+  .plate-manuscript{
+    background:
+      radial-gradient(70% 90% at 50% 50%, #2b2118 0%, #1b150f 60%, #0e0a07 100%);
+  }
+  .plate-manuscript::before{
+    background:
+      radial-gradient(40% 50% at 50% 50%, rgba(235,225,207,0.04), transparent 70%);
+  }
+  .plate-manuscript .lines{
+    position:absolute; inset: 18% 16%;
+    z-index: 2;
+    opacity: 0.55;
+    background:
+      repeating-linear-gradient(180deg, transparent 0 32px, rgba(197,165,114,0.18) 32px 33px);
+    mask-image: linear-gradient(180deg, transparent, black 20%, black 80%, transparent);
+  }
+  .plate-manuscript .initial{
+    position:absolute; left: 18%; top: 18%;
+    z-index: 3;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(80px, 12vw, 180px);
+    line-height: 1;
+    color: var(--burgundy);
+    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+
+  /* corner cap label inside plate */
+  .plate .cap{
+    position:absolute; left: 22px; bottom: 18px;
+    z-index: 4;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(235,225,207,0.72);
+    text-shadow: 0 1px 8px rgba(10,8,7,0.65);
+  }
+  .plate .cap.tr{ left: auto; right: 22px; bottom: 18px }
+  .plate .cap.tl{ left: 22px; top: 18px; bottom: auto }
+
+  /* -------- HERO -------- */
+  section.hero{
+    /* HERO is a cinematic dark plate — scope its tokens back to ivory/gold
+       on dark, regardless of the parchment ground around it. */
+    --ink:        #0a0807;
+    --umber:      #14100c;
+    --umber-2:    #1a1612;
+    --parchment:  #ebe1cf;
+    --ivory:      #f4ecd8;
+    --ivory-soft: #d8cdb5;
+    --gold:       #c5a572;
+    --gold-warm:  #d4b886;
+    --gold-deep:  #8a6b3c;
+    height: 100vh;
+    min-height: 720px;
+    position: relative;
+    overflow: hidden;
+    color: var(--ivory);
+    background: var(--ink);
+  }
+  .hero .photo{
+    position:absolute; inset:0;
+    background-image: url("media/marko-lada-publika.webp");
+    background-size: cover;
+    background-position: center 42%;
+    filter: brightness(0.72) contrast(1.05) saturate(0.92);
+    z-index: 0;
+  }
+  .hero .stage{
+    position:absolute; inset:0;
+    z-index: 1;
+    background:
+      radial-gradient(60% 80% at 50% 65%, rgba(212,184,134,0.16), rgba(20,16,12,0) 55%),
+      radial-gradient(120% 100% at 50% 120%, rgba(93,39,48,0.45), transparent 60%),
+      linear-gradient(180deg,
+        rgba(10,8,7,0.92) 0%,
+        rgba(10,8,7,0.55) 14%,
+        rgba(20,16,12,0.32) 32%,
+        rgba(20,16,12,0.38) 65%,
+        rgba(10,8,7,0.95) 100%);
+  }
+  /* legacy nave silhouettes — kept for fallback when no photo loaded */
+  .hero .nave{
+    position:absolute; left:50%; bottom:0; transform: translateX(-50%);
+    width: min(1400px, 110vw);
+    height: 86vh;
+    z-index: 1;
+    pointer-events:none;
+  }
+  .hero .arch{
+    position:absolute; bottom: 0;
+    width: 22%; height: 78%;
+    border-radius: 50% 50% 0 0 / 22% 22% 0 0;
+    background: linear-gradient(180deg, rgba(10,8,7,0) 30%, rgba(10,8,7,0.7) 90%);
+    border: 1px solid rgba(197,165,114,0.10);
+    border-bottom: none;
+    box-shadow: inset 0 -120px 140px rgba(0,0,0,0.7);
+  }
+  .hero .arch.c{ left:50%; transform: translateX(-50%); width: 38%; height: 92%; border-radius: 50% 50% 0 0 / 30% 30% 0 0 }
+  .hero .arch.l{ left: 4%; height: 70%; transform: translateX(0) }
+  .hero .arch.r{ right: 4%; height: 70% }
+  .hero .arch.ll{ left: 23%; height: 80% }
+  .hero .arch.rr{ right: 23%; height: 80% }
+  .hero .candle{
+    position:absolute; left:50%; top: 52%; transform: translateX(-50%);
+    width: 700px; height: 700px;
+    border-radius:50%;
+    background: radial-gradient(circle, rgba(255,210,140,0.30), rgba(255,180,110,0.06) 30%, transparent 65%);
+    filter: blur(6px);
+    z-index: 1;
+    animation: flicker 5.5s ease-in-out infinite;
+  }
+  @keyframes flicker{
+    0%,100%{ opacity: 1; transform: translate(-50%, 0) scale(1) }
+    20%{ opacity: .92; transform: translate(-50%, -2px) scale(1.01) }
+    50%{ opacity: 1.0; transform: translate(-50%, 1px) scale(0.995) }
+    80%{ opacity: .96; transform: translate(-50%, -1px) scale(1.005) }
+  }
+  .hero .copy{
+    position:absolute; inset:0;
+    display:flex; flex-direction:column; justify-content: center; align-items:center;
+    text-align:center;
+    z-index: 3;
+    padding: 0 var(--gut);
+  }
+  /* hero CTA: light parchment bg with dark text — the section's own
+     scoped --ink is dark, so be explicit here */
+  .hero .btn.solid{
+    background: #f4ecd8;
+    color: #1a1310;
+    border-color: #f4ecd8;
+  }
+  .hero .btn.solid .arr{ background: #1a1310 }
+  .hero .btn.solid .arr::after{ border-color: #1a1310 }
+  .hero .btn:not(.solid){
+    background: rgba(10,8,7,0.55);
+    border-color: rgba(197,165,114,0.55);
+    color: #f4ecd8;
+  }
+  .hero .btn:not(.solid):hover{
+    background: rgba(10,8,7,0.78);
+    border-color: var(--gold);
+    color: #fff;
+  }
+  .hero .btn.solid:hover{
+    background: var(--gold); border-color: var(--gold); color: #1a1310;
+  }
+  .hero .pretitle{
+    margin-bottom: 28px;
+    display:flex; align-items:center; justify-content:center; gap: 18px;
+    flex-wrap: wrap; row-gap: 10px;
+    padding: 0 20px; max-width: 100%; box-sizing: border-box;
+  }
+  .hero .pretitle .smallcaps{ text-align:center; max-width:100% }
+  .hero .pretitle .l{ width: 60px; height:1px; background: var(--gold); opacity: 0.6 }
+  .hero h1{
+    margin-bottom: 28px;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.6);
+  }
+  .hero h1 em{ color: var(--gold-warm) }
+  .hero .sub{
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(20px, 2.2vw, 30px);
+    color: var(--ivory-soft);
+    max-width: 720px;
+    line-height: 1.35;
+    margin-bottom: 56px;
+  }
+  .hero .ctas{ display:flex; gap: 18px; flex-wrap:wrap; justify-content:center }
+  .hero .scrollhint{
+    position:absolute; left:50%; bottom: 36px; transform: translateX(-50%);
+    z-index: 4;
+    color: var(--ivory-soft);
+    font-family: var(--serif);
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    text-align:center;
+  }
+  .hero .scrollhint .line{
+    display:block; margin: 16px auto 0;
+    width:1px; height: 56px;
+    background: linear-gradient(180deg, transparent, var(--gold) 50%, transparent);
+    animation: drip 2.4s ease-in-out infinite;
+  }
+  @keyframes drip{
+    0%,100%{ transform: scaleY(0.6); transform-origin: top }
+    50%{ transform: scaleY(1.0) }
+  }
+  /* Short laptop viewports (e.g. MacBook): lift the centered hero copy and
+     tighten the scroll hint so "Qui cantat, bis orat" isn't crowded against the CTAs */
+  @media (min-width: 981px) and (max-height: 900px){
+    .hero .copy{ padding-bottom: 96px; }
+    .hero .scrollhint{ bottom: 28px; }
+    .hero .scrollhint .line{ height: 40px; margin-top: 12px; }
+  }
+  .hero .marquee{
+    text-align:center;
+    margin-bottom: 18px;
+    padding: 0 clamp(20px, 5vw, 48px); box-sizing: border-box;
+    text-wrap: balance;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    color: rgba(235,225,207,0.62);
+    font-size: 13px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+  .hero .frame-meta{
+    position:absolute; z-index: 4;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(235,225,207,0.55);
+  }
+  .hero .frame-meta.bl{ left: var(--gut); bottom: 30px }
+  .hero .frame-meta.br{ right: var(--gut); bottom: 30px; text-align:right }
+  .hero .frame-meta strong{ color: var(--gold); font-weight: 500 }
+
+  @media (max-width: 620px){
+    .hero .pretitle .l{ width: 32px }
+    .hero .pretitle .smallcaps{ letter-spacing: 0.2em }
+    .hero .marquee{ font-size: 12px; letter-spacing: 0.24em }
+  }
+
+  /* -------- O ANSAMBLU -------- */
+  section.ansambl{
+    /* dark plate — rescope tokens like hero so ivory/parchment stay legible */
+    --ink:        #0a0807;
+    --parchment:  #ebe1cf;
+    --ivory:      #f4ecd8;
+    --ivory-soft: #d8cdb5;
+    --gold:       #c5a572;
+    --gold-warm:  #d4b886;
+    --gold-deep:  #8a6b3c;
+    background: #0a0807;
+    color: var(--ivory);
+    overflow: hidden;
+  }
+  .ansambl .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 110px);
+    align-items: start;
+  }
+  .ansambl .colL{ padding-top: 60px }
+  .ansambl .plate-stack{
+    display:grid; grid-template-columns: 1fr; gap: 18px;
+  }
+  .ansambl .plate.tall{ aspect-ratio: 3/4 }
+  .ansambl .small-row{
+    display:grid; grid-template-columns: 1fr 1fr; gap: 18px;
+  }
+  .ansambl .plate.small{ aspect-ratio: 1/1 }
+  .ansambl h2{ margin-bottom: 36px }
+  .ansambl .lead{ margin-bottom: 28px }
+  .ansambl p + p{ margin-top: 1.1em }
+  .ansambl .sig{
+    margin-top: 44px;
+    display:flex; align-items:center; gap: 18px;
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ivory-soft);
+  }
+  .ansambl .sig .gold{ color: var(--gold) }
+  .ansambl .stats-block{
+    margin-top: clamp(80px, 10vw, 140px);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ansambl .stats-head{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 40px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid rgba(197,165,114,0.22);
+    margin-bottom: 0;
+  }
+  .ansambl .stats-head h3{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(36px, 4vw, 56px);
+    line-height: 1;
+    color: var(--ivory);
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+  .ansambl .stats-head h3 em{ color: var(--gold); font-style: italic }
+  .ansambl .stats-head .meta{
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ivory-soft);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    max-width: 280px;
+  }
+  .ansambl .stats{
+    margin-top: 0;
+    display:grid; grid-template-columns: 1fr; gap: 0;
+    border: none;
+  }
+  .ansambl .stat{
+    display: grid;
+    grid-template-columns: 60px 130px 1fr 1fr;
+    align-items: baseline;
+    gap: clamp(28px, 4vw, 64px);
+    padding: 38px 0 38px 4px;
+    border-bottom: 1px solid rgba(197,165,114,0.14);
+    position: relative;
+    transition: padding-left .35s ease;
+  }
+  .ansambl .stat:last-child{ border-bottom: 1px solid rgba(197,165,114,0.22) }
+  .ansambl .stat::before{
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: var(--gold);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .5s cubic-bezier(.2,.7,.2,1);
+  }
+  .ansambl .stat:hover{ padding-left: 24px }
+  .ansambl .stat:hover::before{ transform: scaleY(1) }
+  .ansambl .stat .roman{
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--gold);
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    align-self: baseline;
+  }
+  .ansambl .stat .num{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(28px, 2.6vw, 38px);
+    color: var(--ivory);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 0;
+  }
+  .ansambl .stat .num sup{ color: var(--gold); font-size: 0.45em; vertical-align: top; margin-left: 4px; font-style: italic }
+  .ansambl .stat .achievement{
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ivory);
+    font-size: clamp(24px, 2.3vw, 32px);
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+  }
+  .ansambl .stat .place{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ivory-soft);
+    line-height: 1.6;
+    text-align: right;
+  }
+  .ansambl .stat .place .cat{
+    display: block;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: var(--gold);
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  /* -------- PRIZNANJA (highlights strip) -------- */
+  section.priznanja{
+    /* dark plate — same tokens as ansambl */
+    --ink:        #0a0807;
+    --parchment:  #ebe1cf;
+    --ivory:      #f4ecd8;
+    --ivory-soft: #d8cdb5;
+    --gold:       #c5a572;
+    --gold-warm:  #d4b886;
+    --gold-deep:  #8a6b3c;
+    background: #0a0807;
+    color: var(--ivory);
+    padding: clamp(50px, 6vw, 80px) 0;
+    position: relative;
+    overflow: hidden;
+  }
+  /* hairline rules at the section seams */
+  section.priznanja::before,
+  section.priznanja::after{
+    content: "";
+    position: absolute; left: 8%; right: 8%;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(197,165,114,0.35) 20%,
+      rgba(197,165,114,0.35) 80%,
+      transparent 100%);
+  }
+  section.priznanja::before{ top: 0 }
+  section.priznanja::after{ bottom: 0 }
+
+  /* head row — eyebrow on left, sve nagrade link on right */
+  .priznanja .pz-head{
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
+    margin-bottom: clamp(32px, 4vw, 52px);
+  }
+  .priznanja .pz-head .pz-title{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(20px, 1.8vw, 28px);
+    color: var(--ivory);
+    letter-spacing: -0.005em;
+    margin-top: 14px;
+    max-width: 540px;
+    line-height: 1.3;
+  }
+  .priznanja .pz-head .pz-title em{ color: var(--gold-warm); font-style: italic }
+  .priznanja .pz-head .pz-link{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ivory);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 4px;
+    transition: color .3s, border-color .3s;
+    display: inline-flex; align-items: center; gap: 12px;
+    align-self: flex-end;
+  }
+  .priznanja .pz-head .pz-link:hover{ color: var(--gold-warm); border-color: var(--gold-warm) }
+  .priznanja .pz-head .pz-link .arrow{
+    color: var(--gold);
+    font-style: normal;
+    transition: transform .3s ease;
+  }
+  .priznanja .pz-head .pz-link:hover .arrow{ transform: translateX(4px) }
+
+  /* marquee */
+  .priznanja .pz-marquee{
+    position: relative;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    overflow: hidden;
+    padding: 8px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  }
+  .priznanja .pz-track{
+    display: flex;
+    align-items: center;
+    gap: clamp(36px, 4vw, 56px);
+    width: max-content;
+    animation: pz-scroll 90s linear infinite;
+    will-change: transform;
+  }
+  .priznanja:hover .pz-track,
+  .priznanja .pz-marquee:hover .pz-track{ animation-play-state: paused }
+
+  @keyframes pz-scroll{
+    from { transform: translateX(0) }
+    to   { transform: translateX(-50%) }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .priznanja .pz-track{ animation: none }
+  }
+
+  .priznanja .pz-item{
+    display: inline-flex;
+    align-items: baseline;
+    gap: 18px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 6px 0;
+  }
+  .priznanja .pz-item .y{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(34px, 3.4vw, 52px);
+    line-height: 1;
+    color: var(--ivory);
+    letter-spacing: -0.02em;
+  }
+  .priznanja .pz-item .a{
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(17px, 1.4vw, 22px);
+    color: var(--ivory);
+    line-height: 1.2;
+  }
+  .priznanja .pz-item .p{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding-left: 14px;
+    border-left: 1px solid rgba(197,165,114,0.30);
+  }
+  .priznanja .pz-item.hero .a{ color: var(--gold-warm) }
+  .priznanja .pz-item.hero .y::after{
+    content: "✣";
+    color: var(--gold);
+    font-size: 0.32em;
+    margin-left: 8px;
+    vertical-align: 0.6em;
+    font-style: italic;
+  }
+  .priznanja .pz-orn{
+    color: var(--gold-deep);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    flex-shrink: 0;
+    opacity: 0.6;
+  }
+
+  /* count strip under marquee */
+  .priznanja .pz-count{
+    margin-top: clamp(32px, 4vw, 52px);
+    text-align: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ivory-soft);
+    font-size: clamp(14px, 1vw, 16px);
+    letter-spacing: 0.04em;
+  }
+  .priznanja .pz-count strong{
+    font-style: normal;
+    font-weight: 400;
+    color: var(--gold);
+    margin: 0 4px;
+  }
+
+  @media (max-width: 700px){
+    .priznanja .pz-head{ flex-direction: column; align-items: flex-start; gap: 18px }
+    .priznanja .pz-head .pz-link{ align-self: flex-start }
+    .priznanja .pz-track{ gap: 28px; animation-duration: 70s }
+    .priznanja .pz-item{ gap: 14px }
+    .priznanja .pz-item .p{ padding-left: 10px }
+  }
+
+  /* -------- PROSTOR -------- */
+  section.prostor{
+    background: linear-gradient(180deg, var(--ink) 0%, #e4d8ba 30%, #ecdfbe 70%, var(--ink) 100%);
+    color: var(--ivory);
+  }
+  .prostor .hero-img{
+    position: relative;
+    aspect-ratio: 21/9;
+    margin: 60px 0 0;
+    overflow:hidden;
+  }
+  .prostor .header-row{
+    display: grid; grid-template-columns: 1fr 1.6fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: end;
+    margin-bottom: 8px;
+  }
+  .prostor .quote{
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(24px, 2.4vw, 36px);
+    line-height: 1.32;
+    color: var(--ivory-soft);
+    max-width: 580px;
+  }
+  .prostor .quote::before{
+    content:"“";
+    font-family: var(--serif);
+    font-size: 1.4em;
+    color: var(--gold);
+    line-height: 0;
+    margin-right: 0;
+    vertical-align: -0.05em;
+  }
+  .prostor .columns{
+    margin-top: 90px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(20px, 3vw, 56px);
+  }
+  .prostor .read-more-toggle{
+    display: none;
+    margin-top: 32px;
+    background: transparent;
+    border: 1px solid rgba(138,107,60,0.45);
+    color: var(--ivory);
+    padding: 14px 26px;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+  }
+  .prostor .read-more-toggle:hover{ border-color: var(--burgundy); color: var(--burgundy) }
+  .prostor .read-more-toggle .arr-down{
+    display: inline-block; margin-left: 10px;
+    transition: transform .35s ease;
+  }
+  .prostor.expanded .read-more-toggle .arr-down{ transform: rotate(180deg) }
+  .prostor .expandable{ display: contents }
+  .prostor .col h4{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--gold-warm);
+    margin-bottom: 14px;
+  }
+  .prostor .col .num{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .prostor .col p{ font-size: 16px; line-height: 1.6; color: var(--ivory-soft) }
+  .prostor .gallery{
+    margin-top: 90px;
+    display:grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 14px;
+    aspect-ratio: 16 / 9;
+  }
+  .prostor .gallery > *:nth-child(1){ grid-row: span 2 }
+
+  /* -------- ISTAKNUTA IZVEDBA (FEATURE) -------- */
+  section.feature{
+    /* dark plate — rescope tokens like hero so ivory/parchment stay legible */
+    --ink:        #0a0807;
+    --parchment:  #ebe1cf;
+    --ivory:      #f4ecd8;
+    --ivory-soft: #d8cdb5;
+    --gold:       #c5a572;
+    --gold-warm:  #d4b886;
+    --gold-deep:  #8a6b3c;
+    position: relative;
+    overflow:hidden;
+    color: var(--ivory);
+    padding: 0;
+    background: #0a0807;
+  }
+  .feature .stage{
+    position: relative;
+    height: 100vh;
+    min-height: 760px;
+    overflow: hidden;
+  }
+  /* full-bleed media layer (poster image, then iframe on play) */
+  .feature .media{
+    position: absolute; inset: 0;
+    z-index: 1;
+    background-color: #0a0807;
+    background-size: cover;
+    background-position: center 38%;
+  }
+  .feature .media iframe{
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+  /* scrim — darken edges so copy reads, keep image breathing in the middle */
+  .feature .scrim{
+    position: absolute; inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(180deg,
+        rgba(10,8,7,0.70) 0%,
+        rgba(10,8,7,0.20) 16%,
+        rgba(10,8,7,0.05) 38%,
+        rgba(10,8,7,0.40) 58%,
+        rgba(10,8,7,0.92) 82%,
+        rgba(10,8,7,0.98) 100%),
+      radial-gradient(80% 70% at 20% 95%, rgba(10,8,7,0.75), transparent 65%);
+    pointer-events: none;
+  }
+  .feature .stage.playing .scrim{ opacity: 0; transition: opacity .5s ease }
+  .feature .stage.playing .top-meta,
+  .feature .stage.playing .bottom-copy{ opacity: 0; pointer-events: none; transition: opacity .4s ease }
+
+  /* top corner labels — like film slate */
+  .feature .top-meta{
+    position: absolute; left: 0; right: 0; top: 0;
+    z-index: 4;
+    padding: clamp(28px, 4vw, 52px) clamp(28px, 4vw, 64px);
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 24px;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(235,225,207,0.7);
+  }
+  .feature .top-meta strong{ color: var(--gold); font-weight: 500; letter-spacing: 0.32em }
+  .feature .top-meta .right{ text-align: right }
+
+  /* play button — large, centered, breathing */
+  .feature .play-big{
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    border: 1px solid rgba(197,165,114,0.6);
+    background: rgba(20,16,12,0.45);
+    backdrop-filter: blur(8px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ivory);
+    font-family: var(--serif);
+    font-size: 38px;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+  .feature .play-big::before{
+    content:""; position:absolute; inset: -18px;
+    border-radius: 50%;
+    border: 1px solid rgba(197,165,114,0.25);
+    animation: ring 3.5s ease-in-out infinite;
+  }
+  .feature .play-big::after{
+    content:""; position:absolute; inset: -38px;
+    border-radius: 50%;
+    border: 1px solid rgba(197,165,114,0.12);
+    animation: ring 3.5s ease-in-out infinite;
+    animation-delay: .8s;
+  }
+  .feature .play-big:hover{
+    background: rgba(93,39,48,0.65);
+    border-color: rgba(212,184,134,0.85);
+    transform: translate(-50%, -50%) scale(1.04);
+  }
+  .feature .play-big .triangle{
+    width: 0; height: 0;
+    border-left: 22px solid var(--ivory);
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    margin-left: 8px;
+  }
+  .feature .play-big .label{
+    position: absolute;
+    top: calc(100% + 22px);
+    left: 50%; transform: translateX(-50%);
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--ivory-soft);
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+  }
+  .feature .stage.playing .play-big{ opacity: 0; pointer-events: none; transition: opacity .3s ease }
+
+  /* bottom copy overlay */
+  .feature .bottom-copy{
+    position: absolute; left: 0; right: 0; bottom: 0;
+    z-index: 4;
+    padding: clamp(40px, 6vw, 80px) clamp(28px, 4vw, 80px) clamp(40px, 6vw, 72px);
+    max-width: var(--maxw);
+    margin: 0 auto;
+    width: 100%;
+  }
+  .feature .bottom-copy .eyebrow{ color: var(--gold); margin-bottom: 22px }
+  .feature .bottom-copy h2{
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(48px, 7vw, 124px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--ivory);
+    margin-bottom: 32px;
+    max-width: 1100px;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.5);
+  }
+  .feature .bottom-copy h2 em{ color: var(--gold-warm); font-style: italic }
+  .feature .credits-row{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: clamp(20px, 3vw, 56px);
+    border-top: 1px solid rgba(197,165,114,0.3);
+    padding-top: 26px;
+    max-width: 1100px;
+  }
+  .feature .credits-row .m .k{
+    font-family: var(--serif); font-weight: 500; font-size: 10px;
+    letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 8px;
+  }
+  .feature .credits-row .m .v{
+    font-family: var(--serif); font-style: italic;
+    font-size: clamp(15px, 1.1vw, 19px);
+    color: var(--ivory);
+    line-height: 1.3;
+  }
+
+  /* -------- POSTANI CANTORES -------- */
+  section.postani{
+    position: relative;
+    isolation: isolate;
+    background: var(--ink);
+    color: var(--parchment);
+    overflow: hidden;
+  }
+  section.postani::before{
+    /* Kljakovićeva freska — Uskrišenje Lazara — “Lazare iziđi” */
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: url("media/freska-lazar.webp");
+    background-size: cover;
+    background-position: center 42%;
+    background-repeat: no-repeat;
+  }
+  section.postani::after{
+    /* only dark fade at the section's top + bottom edges so the fresco
+       still flows into the surrounding parchment but reads as its own
+       saturated colour panel in between */
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg,
+      var(--ink) 0%,
+      transparent 9%,
+      transparent 91%,
+      var(--ink) 100%);
+  }
+  section.postani > .wrap{ position: relative; z-index: 2 }
+  .postani .head{
+    background: rgba(239,230,208,0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(138,107,60,0.45);
+    padding: 56px clamp(32px, 5vw, 64px);
+    display:grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 96px);
+    align-items:end;
+    margin-bottom: 90px;
+  }
+  .postani .head .right{ padding-bottom: 4px }
+  /* halo is no longer needed since head sits inside a parchment panel */
+
+  .postani .voices{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 100px;
+  }
+  .postani .voice{
+    position: relative;
+    padding: 24px 22px 22px;
+    border: 1px solid rgba(138,107,60,0.45);
+    background: rgba(255,250,240,0.82);
+    backdrop-filter: blur(8px) saturate(130%);
+    -webkit-backdrop-filter: blur(8px) saturate(130%);
+    transition: background .4s ease, border-color .4s ease, transform .4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .postani .voice:hover{
+    background: rgba(255,250,240,0.95);
+    border-color: rgba(138,107,60,0.65);
+  }
+  .postani .voice-row{
+    display: flex; align-items: baseline; justify-content: space-between; gap: 14px;
+  }
+  .postani .voice-num{
+    font-family: var(--serif); font-weight: 500; font-size: 11px;
+    letter-spacing: 0.32em; color: var(--gold);
+  }
+  .postani .voice-letter{
+    font-family: var(--serif); font-style: italic; font-weight: 300;
+    font-size: 22px; color: var(--gold-warm); line-height: 1;
+  }
+  .postani .voice-name{
+    font-family: var(--serif); font-weight: 300; font-style: italic;
+    font-size: clamp(28px, 2.6vw, 38px); color: var(--ivory); line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .postani .voice-range{
+    font-family: var(--serif); font-weight: 500; font-size: 11px;
+    letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold-deep);
+    padding-top: 14px;
+    border-top: 1px solid rgba(138,107,60,0.25);
+  }
+  .postani .voice-range em{ font-style: italic; color: var(--ivory-soft); letter-spacing: 0.05em; text-transform: none; margin-left: 6px }
+
+  .postani .cta-line{
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(138,107,60,0.22);
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    gap: 12px 24px;
+  }
+  .postani .cta-line .cta-label{
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(17px, 1.4vw, 22px);
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--burgundy);
+  }
+  .postani .cta-line .cta-label::after{
+    content: " →";
+    color: var(--gold);
+    font-style: normal;
+    margin-left: 4px;
+  }
+  .postani .head .email-link{
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(20px, 1.7vw, 26px); color: var(--ivory);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+    transition: color .3s ease, border-color .3s ease;
+  }
+  .postani .head .email-link:hover{ color: var(--gold-warm); border-color: var(--burgundy) }
+  .postani .head .email-link .at{ color: var(--gold); font-style: italic; padding: 0 2px }
+
+
+  .ansambl-toggle{
+    display: none;
+    margin: 28px 0 0;
+    background: transparent;
+    border: 1px solid rgba(197,165,114,0.45);
+    color: var(--ivory);
+    padding: 14px 26px;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+  }
+  .ansambl-toggle:hover{ border-color: var(--gold); color: var(--gold) }
+  .ansambl-toggle .arr-down{ display: inline-block; margin-left: 10px; transition: transform .35s ease }
+  .ansambl .colR.expanded .ansambl-toggle .arr-down{ transform: rotate(180deg) }
+  .ansambl .ansambl-expandable{ display: contents }
+
+  /* -------- KONCERTI -------- */
+  section.koncerti{
+    background: var(--ink);
+    color: var(--parchment);
+  }
+  .koncerti .head{
+    display:grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 96px); align-items:end;
+    margin-bottom: 80px;
+  }
+  .koncerti .list{ display: grid; gap: 0; border-top: 1px solid rgba(197,165,114,0.18) }
+  .koncerti .event.is-past{ display: none !important }
+  .koncerti .event{
+    display:grid;
+    grid-template-columns: 200px 1.6fr 1.4fr;
+    gap: clamp(20px, 3vw, 48px);
+    align-items: center;
+    padding: 36px 0;
+    border-bottom: 1px solid rgba(197,165,114,0.18);
+    position: relative;
+    transition: padding .4s ease, color .4s ease;
+    cursor: pointer;
+  }
+
+  .koncerti .event .date{
+    font-family: var(--serif);
+  }
+  .koncerti .event .date .d{
+    font-size: clamp(34px, 3.4vw, 52px);
+    font-weight: 300;
+    line-height: 1;
+    color: var(--ivory);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .koncerti .event .date .d em{
+    font-style: italic;
+    font-weight: 300;
+    color: var(--gold-warm);
+    letter-spacing: 0;
+    margin-left: 2px;
+  }
+  .koncerti .event .date .m{
+    display:block;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 8px;
+  }
+  .koncerti .event h3{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(22px, 2vw, 28px);
+    color: var(--ivory);
+    line-height: 1.15;
+    margin-bottom: 6px;
+  }
+  .koncerti .event .tag{
+    display: inline-block;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    padding: 7px 12px 6px;
+    border: 1px solid;
+    border-radius: 1px;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+  .koncerti .event .tag.misa{ color: #6b1f2a; border-color: rgba(107,31,42,0.45); background: rgba(107,31,42,0.08) }
+  .koncerti .event .tag.nastup{ color: #4a4520; border-color: rgba(74,69,32,0.45); background: rgba(74,69,32,0.08) }
+  .koncerti .event .tag.koncert{ color: #6b4a1f; border-color: rgba(107,74,31,0.45); background: rgba(107,74,31,0.08) }
+  .koncerti .event h3 em{ color: var(--gold-deep); font-weight: 400; font-style: italic }
+  .koncerti .event .composers{
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ivory-soft);
+    opacity: 0.85;
+  }
+  .koncerti .event .loc{
+    font-family: var(--serif);
+  }
+  .koncerti .event .loc .place{
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ivory);
+    margin-bottom: 6px;
+  }
+  .koncerti .event .loc .time{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ivory-soft);
+  }
+  .koncerti .event .price{
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ivory-soft);
+  }
+  .koncerti .event .price strong{
+    display:block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .koncerti .event .cta{
+    text-align: right;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ivory-soft);
+    transition: color .3s ease;
+  }
+  .koncerti .event:hover .cta{ color: var(--gold) }
+  .koncerti .footnote{
+    margin-top: 60px;
+    display:flex; justify-content: space-between; align-items:center;
+    flex-wrap: wrap; gap: 24px;
+  }
+  .koncerti .footnote p{
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ivory-soft);
+    font-size: 17px;
+    max-width: 580px;
+  }
+
+  /* -------- NEWSLETTER -------- */
+  section.newsletter{
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: stretch;
+    background: var(--ink);
+    color: var(--ivory);
+    padding: 0;
+    position: relative;
+    min-height: 80vh;
+    text-align: left;
+  }
+  .newsletter .nl-glass{
+    position: relative;
+    background-image: url("media/sveti-marko-vitraj.webp");
+    background-size: cover;
+    background-position: center 28%;
+    background-color: #1a1612;
+    overflow: hidden;
+    min-height: 560px;
+  }
+  .newsletter .nl-glass::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(95% 100% at 50% 50%, transparent 55%, rgba(10,8,7,0.55) 100%),
+      linear-gradient(180deg, rgba(10,8,7,0.25) 0%, transparent 18%, transparent 82%, rgba(10,8,7,0.45) 100%);
+  }
+  .newsletter .nl-glass .cap{
+    position: absolute;
+    z-index: 2;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(245,238,222,0.95);
+    text-shadow: 0 1px 6px rgba(10,8,7,0.9);
+    background: radial-gradient(ellipse at center, rgba(10,8,7,0.42) 0%, rgba(10,8,7,0.3) 55%, rgba(10,8,7,0) 100%);
+    padding: 10px 26px;
+    border-radius: 40px;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+  }
+  .newsletter .nl-glass .cap.tl{ left: 6px; top: 22px }
+  .newsletter .nl-glass .cap.bl{ left: 6px; bottom: 22px }
+  .newsletter .nl-content{
+    background:
+      radial-gradient(80% 80% at 65% 50%, #e8debf 0%, var(--ink) 100%);
+    padding: clamp(80px, 10vw, 140px) clamp(40px, 6vw, 96px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .newsletter .nl-content::before{
+    content:"";
+    position:absolute; inset:0;
+    background: radial-gradient(35% 45% at 50% 50%, rgba(138,107,60,0.16), transparent 70%);
+    pointer-events:none;
+  }
+  .newsletter .nl-content > *{ position: relative }
+  .newsletter .eyebrow{ margin-bottom: 28px }
+  .newsletter h2{ margin-bottom: 28px; max-width: 640px; text-wrap: balance }
+  .newsletter .lead{ max-width: 540px; margin: 0 0 48px }
+  .newsletter form{
+    max-width: 520px;
+    display:flex; gap: 0;
+    border: 1px solid rgba(138,107,60,0.4);
+    background: rgba(255,250,240,0.6);
+    transition: border-color .3s;
+  }
+  .newsletter form:focus-within{ border-color: var(--burgundy) }
+  .newsletter form input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--ivory);
+    padding: 22px 24px;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-style: italic;
+    outline: none;
+  }
+  .newsletter form input::placeholder{ color: rgba(74,58,40,0.5) }
+  .newsletter form button{
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(138,107,60,0.4);
+    color: var(--ivory);
+    padding: 0 28px;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .3s, color .3s;
+  }
+  .newsletter form button:hover{ background: var(--burgundy); color: var(--ink) }
+  .newsletter .consent{
+    display:flex; align-items:flex-start; gap:10px;
+    max-width:520px; margin-top:16px;
+    font-family:var(--serif); font-size:13px; line-height:1.5;
+    color: rgba(74,58,40,0.75);
+  }
+  .newsletter .consent input{ margin-top:3px; accent-color: var(--burgundy); flex-shrink:0 }
+  .newsletter .note{
+    margin-top: 20px;
+    max-width: 520px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(74,58,40,0.7);
+  }
+
+  /* -------- FOOTER -------- */
+  footer{
+    background:
+      linear-gradient(180deg, var(--ink) 0%, var(--ink) 70%, #d9c8a3 100%);
+    color: var(--ivory-soft);
+    padding-top: 0;
+  }
+  footer .ornament{
+    text-align:center;
+    margin-bottom: 14px;
+    color: var(--gold);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    letter-spacing: 0.2em;
+  }
+  footer .grid{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    gap: clamp(20px, 4vw, 80px);
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(197,165,114,0.15);
+  }
+  footer .kontakt-block h5{ margin-bottom: 12px; }
+  footer .kontakt-block ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    line-height: 1.25;
+  }
+  footer .kontakt-block li{ margin-bottom: 0; line-height: 1.35; }
+  footer .kontakt-block li{
+    font-style: italic;
+    color: rgba(74,58,40,0.72);
+    font-size: 15px;
+  }
+  footer .kontakt-block li:first-child{ margin-bottom: 4px; font-weight: 400; }
+  footer .kontakt-block li a{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gold);
+    border-bottom: 1px solid rgba(138,107,60,0.35);
+    padding-bottom: 1px;
+  }
+  footer .kontakt-block li.k-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: var(--gold);
+  }
+  footer .kontakt-block li.k-contact svg{ flex: none; opacity: 0.85; }
+  footer .kontakt-block li.k-addr{
+    color: var(--gold);
+    font-style: normal;
+    font-weight: 400;
+  }
+  footer .kontakt-block li.k-addr span{
+    font-size: 18px;
+  }
+  footer .kontakt-block li.k-addr svg{ opacity: 0.85; }
+  footer .kontakt-block li.k-addr a{ border-bottom: none; padding-bottom: 0; color: inherit; transition: color .25s; }
+  footer .kontakt-block li.k-addr a:hover{ color: var(--gold-deep); }
+  footer .kontakt-block li a:hover{ color: var(--gold-deep); border-color: var(--gold-deep); }
+  footer .kontakt-block li:first-child{
+    margin-bottom: 0;
+  }
+  footer h5{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 22px;
+  }
+  footer ul{ list-style: none }
+  footer li{
+    margin-bottom: 12px;
+    font-family: var(--serif);
+    font-size: 16px;
+    color: var(--ivory-soft);
+  }
+  footer li a{
+    transition: color .3s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+  footer li a:hover{ color: var(--gold); border-color: var(--gold-deep) }
+  footer .meta{
+    padding: 14px 0 18px;
+    display:flex; justify-content: space-between; align-items:center;
+    flex-wrap: wrap; gap: 18px;
+    font-family: var(--serif);
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(74,58,40,0.55);
+  }
+  footer .meta .credits{ display:flex; gap: 22px }
+  footer .meta > div{ white-space: nowrap }
+  footer .meta .credits span{ color: var(--gold); margin-right: 8px }
+  footer .meta a{ color: var(--gold-deep); border-bottom: 1px solid rgba(138,107,60,0.3); transition: color .25s, border-color .25s }
+  footer .meta a:hover{ color: var(--burgundy); border-color: var(--burgundy) }
+
+  footer .social-icons{
+    display: flex;
+    gap: 14px;
+    margin-bottom: 22px;
+    list-style: none;
+  }
+  footer .social-icons li{ margin: 0 }
+  footer .social-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(197,165,114,0.30);
+    border-radius: 50%;
+    color: var(--ivory-soft);
+    border-bottom-color: rgba(197,165,114,0.30);
+    transition: all .3s ease;
+  }
+  footer .social-icons a:hover{
+    color: var(--gold);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+  footer .join-link{
+    display: inline-block;
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--gold-warm);
+    font-size: 15px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(197,165,114,0.35);
+    transition: color .3s, border-color .3s;
+  }
+  footer .join-link:hover{ color: var(--gold); border-color: var(--gold) }
+
+  footer .footer-follow{
+    text-align: center;
+    margin: 0 calc(var(--gut) * -1) 20px;
+    padding: 24px var(--gut) 22px;
+    background: #0a0807;
+    border-top: 1px solid rgba(197,165,114,0.18);
+    border-bottom: 1px solid rgba(197,165,114,0.18);
+    position: relative;
+  }
+  footer .footer-follow::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(80% 100% at 50% 50%, rgba(197,165,114,0.06), transparent 70%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.06'/></svg>");
+  }
+  footer .footer-follow > *{ position: relative }
+  footer .footer-follow h5{
+    color: #e8cf9a;
+    font-weight: 600;
+    margin-bottom: 22px;
+  }
+  footer .footer-follow .social-icons a{
+    border-color: rgba(232,207,154,0.55);
+    color: #f4ecd8;
+  }
+  footer .footer-follow .social-icons a svg{
+    stroke-width: 1.8;
+  }
+  footer .footer-follow .social-icons a:hover{
+    color: #0a0807;
+    background: #e8cf9a;
+    border-color: #e8cf9a;
+  }
+  footer .footer-follow .social-icons{
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  /* override the right-aligned style for social-block when nested in footer-follow */
+  footer .footer-follow [data-area="social"]{ text-align: center }
+
+  @media (max-width: 980px){
+    .postani .head{
+      padding: 40px clamp(24px, 5vw, 36px) 24px;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  /* -------- reveal on scroll -------- */
+  .reveal{
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 1.2s cubic-bezier(.2,.7,.2,1), transform 1.2s cubic-bezier(.2,.7,.2,1);
+    transition-delay: var(--rd, 0s);
+  }
+  .reveal.in{ opacity: 1; transform: translateY(0) }
+
+  /* parallax helper */
+  [data-parallax]{ will-change: transform }
+
+  /* tweaks mount sits above grain */
+  #tweaks-mount{ position: relative; z-index: 10000 }
+
+  /* -------- responsive -------- */
+  @media (max-width: 980px){
+    .ansambl .grid{ grid-template-columns: 1fr }
+    .ansambl.pad-y{ padding-top: 36px }
+    .ansambl .colL{ padding-top: 24px }
+    .prostor .header-row{ grid-template-columns: 1fr }
+    .prostor .columns{ grid-template-columns: repeat(2, 1fr) }
+    .prostor .gallery{ grid-template-columns: 1fr 1fr; aspect-ratio: 4/5 }
+    .prostor .gallery > *:nth-child(1){ grid-row: span 1; grid-column: span 2 }
+    .postani .head, .koncerti .head{ grid-template-columns: 1fr }
+    .feature .stage .inner{ grid-template-columns: 1fr; padding-top: 120px }
+    .feature .play-big{ width: 100px; height: 100px; top: 38% }
+    .feature .play-big:hover{ transform: translate(-50%, -50%) scale(1.04) }
+    .feature .play-big::before{ inset: -12px }
+    .feature .play-big::after{ inset: -26px }
+    .feature .play-big .triangle{ border-left-width: 18px; border-top-width: 11px; border-bottom-width: 11px }
+    .feature .play-big .label{ top: calc(100% + 14px); font-size: 13px }
+    .feature .credits-row{ grid-template-columns: 1fr 1fr; gap: 24px 32px; padding-top: 28px; margin-top: 28px }
+    .feature .top-meta{ font-size: 10px; padding: clamp(20px, 4vw, 36px) clamp(20px, 4vw, 36px) }
+    .postani .voices{ grid-template-columns: 1fr 1fr }
+    section.newsletter{ grid-template-columns: 1fr; min-height: 0 }
+    .newsletter .nl-glass{ min-height: 0; aspect-ratio: 4/5 }
+    .newsletter .nl-content{ padding: clamp(60px, 9vw, 100px) clamp(24px, 5vw, 56px) }
+    .newsletter h2{ font-size: clamp(36px, 7vw, 52px) }
+    .newsletter h2 br{ display: none }
+    .newsletter form{ flex-wrap: wrap; max-width: none }
+    .newsletter form input{ flex: 1 1 100%; padding: 18px 20px; font-size: 16px }
+    .newsletter form button{ flex: 1 1 100%; border-left: none; border-top: 1px solid rgba(138,107,60,0.4); padding: 18px }
+    .koncerti .event{ grid-template-columns: 120px 1fr 1fr; grid-template-areas: "date prog loc" }
+    .koncerti .event .date{ grid-area: date }
+    .koncerti .event .prog{ grid-area: prog }
+    .koncerti .event .loc{ grid-area: loc }
+    .koncerti .event .price{ grid-area: price }
+    .koncerti .event .cta{ grid-area: cta }
+    nav.top{ grid-template-columns: 1fr auto; column-gap: 18px; align-items: start; }
+    nav.top .brand{ font-size: 14px; letter-spacing: 0.12em; line-height: 1.3; align-self: center; }
+    nav.top .brand .mark{ margin-right: 8px; }
+    nav.top ul{ display:none }
+    nav.top .meta{ display:none }
+    nav.top .hamburger{ display:flex }
+    .hero .marquee{ font-size: 11px; letter-spacing: 0.24em; line-height: 1.7; }
+    .hero .scrollhint{ display: none }
+    .hero .ctas{ flex-direction: column; align-items: stretch; width: 100%; max-width: 320px }
+    .hero .ctas .btn{ justify-content: center }
+    footer .grid{ grid-template-columns: 1fr 1fr }
+  }
+  @media (max-width: 640px){
+    .ansambl .stats{ grid-template-columns: 1fr; }
+    .ansambl .stat{ grid-template-columns: 40px 90px 1fr; gap: 16px; padding: 26px 4px }
+    .ansambl .stat .place{ grid-column: 1 / -1; text-align: left; margin-top: 4px; padding-left: 56px }
+    .ansambl .stats-head{ grid-template-columns: 1fr; gap: 12px }
+    .ansambl .stats-head .meta{ text-align: left }
+    .prostor .columns{ grid-template-columns: 1fr }
+    .prostor .read-more-toggle{ display: block }
+    .prostor .expandable{ display: none }
+    .prostor.expanded .expandable{ display: contents }
+    .ansambl-toggle{ display: block }
+    .ansambl .ansambl-expandable{ display: none }
+    .ansambl .colR.expanded .ansambl-expandable{ display: contents }
+    footer .grid{
+      justify-content: flex-start;
+      text-align: left;
+      padding-bottom: 24px;
+    }
+    footer .kontakt-block h5{ text-align: left; }
+    footer .kontakt-block ul{ align-items: flex-start; }
+    footer .kontakt-block li.k-contact{ justify-content: flex-start; align-items: flex-start; gap: 9px; }
+    footer .kontakt-block li.k-contact svg{ margin-top: 3px; }
+    footer .kontakt-block li.k-addr span{ border-bottom: none; padding-bottom: 0; white-space: nowrap; font-size: clamp(12px, 3.6vw, 15px); }
+    footer .kontakt-block li.k-contact:not(.k-addr) a{ font-size: 13px; }
+    footer .kontakt-block li.k-addr{ align-items: center; font-weight: 700; }
+    footer .kontakt-block li.k-contact a{ font-weight: 700; }
+    footer .kontakt-block li.k-addr svg{ margin-top: 0; }
+    footer h5{ margin-bottom: 14px; font-size: 10px }
+    footer li{ font-size: 14px; margin-bottom: 8px }
+    footer .ornament{ margin-bottom: 18px; font-size: 16px }
+    footer .footer-follow{ margin-bottom: 20px; padding: 22px var(--gut) 20px; }
+    footer .meta{ padding: 12px 0 16px; font-size: 11px; letter-spacing: 0.06em; justify-content: center; }
+
+    .postani .head .right .lead{ font-size: 18px; line-height: 1.45; }
+    .postani .cta-line{ margin-top: 26px; padding-top: 20px; gap: 10px 16px; }
+    .postani .head .email-link{
+      font-size: 15px;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+  }
+  @media (max-width: 700px){
+    html{ scroll-snap-type: y proximity }
+    .koncerti .event{
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      scroll-margin-top: 80px;
+      display: flex !important;
+      flex-direction: column;
+      gap: 0;
+      padding: 28px 0 28px 20px !important;
+      align-items: stretch;
+      border-left: 2px solid var(--gold-deep);
+      margin-left: 0;
+      cursor: default;
+    }
+
+
+    .koncerti .event .date{ order: 1; margin-bottom: 14px }
+    .koncerti .event .date .d{
+      font-size: 44px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: var(--ivory);
+      font-weight: 400;
+    }
+    .koncerti .event .date .d em{ color: var(--gold-deep); font-size: 0.7em; font-style: italic; margin-left: 2px }
+
+    .koncerti .event .prog{ order: 2; margin-bottom: 16px }
+    .koncerti .event .tag{ font-size: 12px; padding: 8px 14px 7px; margin-bottom: 16px; letter-spacing: 0.28em }
+    .koncerti .event h3{
+      font-size: clamp(28px, 7vw, 36px);
+      line-height: 1.22;
+      margin-bottom: 10px;
+    }
+    .koncerti .event .composers{ font-size: 17px; opacity: 0.8; line-height: 1.4 }
+
+    .koncerti .event .loc{
+      order: 3;
+      padding-top: 16px;
+      border-top: 1px solid rgba(138,107,60,0.18);
+    }
+    .koncerti .event .loc .place{
+      font-size: 21px;
+      font-style: italic;
+      color: var(--ivory);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .koncerti .event .loc .time{
+      font-size: 13px;
+      color: var(--gold-deep);
+      letter-spacing: 0.2em;
+      opacity: 1;
+      margin-top: 0;
+    }
+
+    .koncerti .event .price{
+      order: 4;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(138,107,60,0.12);
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 17px;
+      font-style: italic;
+      color: var(--ivory-soft);
+    }
+    .koncerti .event .price strong{
+      display: inline;
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: 0.28em;
+      font-style: normal;
+      color: var(--gold-deep);
+    }
+  }
+  /* email sits inline with the label → rightward arrow (default). On phones where it
+     wraps to the next line, drop the arrow entirely. */
+  @media (max-width: 430px){
+    .postani .cta-line .cta-label::after{ content: none; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#glavni">Skip to content</a>
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="#1a1310"/>
+    <g transform="translate(100 100)" fill="#c5a572" font-family="serif">
+      <text text-anchor="middle" font-size="56" y="-6" font-style="italic">C</text>
+      <text text-anchor="middle" font-size="14" y="28" letter-spacing="4">CANTORES</text>
+      <text text-anchor="middle" font-size="9" y="46" letter-spacing="3" fill="#8a6b3c">SANCTI MARCI</text>
+    </g>
+  </svg>
+</template>
+
+<!-- ===================== NAV ===================== -->
+<nav class="top" id="nav">
+  <div class="brand"><span class="mark">✣</span>Cantores Sancti Marci</div>
+  <ul>
+    <li><a href="#koncerti">Concerts</a></li>
+    <li><a href="#ansambl">The Ensemble</a></li>
+    <li><a href="#prostor">The Space</a></li>
+    <li><a href="#postani">Join the Cantores</a></li>
+  </ul>
+  <div class="meta">
+    <span>Zagreb · Anno 2026</span>
+    <span class="lang"><a href="index.html" style="color:inherit">HR</a>/<span>EN</span></span>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-inner">
+    <div class="mm-eyebrow">Menu</div>
+    <ul>
+      <li><a href="#koncerti">Concerts</a></li>
+      <li><a href="#ansambl">The Ensemble</a></li>
+      <li><a href="#prostor">The Space</a></li>
+      <li><a href="#postani">Join the Cantores</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+    <div class="mm-footer">
+      <span>Zagreb · Anno 2026</span>
+      <div class="lang-toggle" role="group" aria-label="Jezik / Language">
+        <a class="seg" href="index.html">HR</a>
+        <span class="seg active" aria-current="true">EN</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<main id="glavni" tabindex="-1">
+<section class="hero" data-screen-label="01 Hero">
+  <div class="stage"></div>
+
+  <div class="photo" data-parallax data-speed="-0.04"></div>
+  <div class="candle"></div>
+
+  <div class="copy">
+    <div class="marquee reveal">Vox &middot; Spatium &middot; Memoria &middot; Traditio</div>
+    <div class="pretitle reveal" style="--rd: 0.2s">
+      <span class="l"></span>
+      <span class="smallcaps" style="color:var(--gold)">Oratorio Choir · Zagreb · St. Mark's Church</span>
+      <span class="l"></span>
+    </div>
+    <h1 class="title display reveal" style="--rd: 0.35s">
+      Cantores<br><em>Sancti Marci</em>
+    </h1>
+    <p class="sub reveal" style="--rd: 0.6s">
+      Voices of sacred tradition beneath the vaults of St. Mark's
+    </p>
+    <div class="ctas reveal" style="--rd: 0.8s">
+      <a class="btn solid" href="#postani">Join the Cantores <span class="arr"></span></a>
+      <a class="btn" href="#koncerti">Concerts <span class="arr"></span></a>
+    </div>
+  </div>
+
+  <div class="frame-meta bl">
+  </div>
+  <div class="frame-meta br">
+  </div>
+
+  <div class="scrollhint">
+    Qui cantat, bis orat
+    <span class="line"></span>
+  </div>
+</section>
+
+<!-- ===================== KONCERTI ===================== -->
+<section class="koncerti pad-y" id="koncerti" data-screen-label="02 Koncerti">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eyebrow reveal"><span class="dot"></span>Concerts &middot; §i</div>
+        <h2 class="section-title display reveal" style="margin-top: 24px">
+          Performances<br><em>· 2026</em>
+        </h2>
+      </div>
+      <div class="right reveal" style="--rd: .15s">
+        <p class="lead" style="max-width: 500px">
+          Throughout the year, the ensemble performs liturgical and concert
+          programmes in St. Mark's Church and other venues in Zagreb.
+        </p>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="event reveal" data-date="2026-05-24">
+        <div class="date">
+          <span class="d">24.<em>5.</em></span>
+        </div>
+        <div class="prog">
+          <span class="tag misa">Mass &middot; The Pentecost</span>
+          <h3>Haydn: <em>Missa brevis</em> in F &middot; <em>Factus est repente</em></h3>
+          <div class="composers">Joseph Haydn &middot; Pentecost Antiphon</div>
+        </div>
+        <div class="loc">
+          <div class="place italic">St. Mark's Church, Zagreb</div>
+          <div class="time">Sunday &middot; liturgy</div>
+        </div>
+      </div>
+
+      <div class="event reveal" data-date="2026-05-31">
+        <div class="date">
+          <span class="d">31.<em>5.</em></span>
+        </div>
+        <div class="prog">
+          <span class="tag nastup">Performance &middot; Zagreb City Day</span>
+          <h3>Hymn to <em>Our Lady of the Stone Gate</em></h3>
+          <div class="composers">Ceremonial performance &middot; for City Day</div>
+        </div>
+        <div class="loc">
+          <div class="place italic">Stone Gate, Zagreb</div>
+          <div class="time">Sunday &middot; 9.00 pm</div>
+        </div>
+      </div>
+
+      <div class="event reveal" data-date="2026-06-14">
+        <div class="date">
+          <span class="d">14.<em>6.</em></span>
+        </div>
+        <div class="prog">
+          <span class="tag misa">Mass</span>
+          <h3>Vidaković: <em>III. Old Church Slavonic Mass</em></h3>
+          <div class="composers">Albe Vidaković &middot; Old Church Slavonic liturgical text</div>
+        </div>
+        <div class="loc">
+          <div class="place italic">Crkva sv. Marka, Zagreb</div>
+          <div class="time">Nedjelja &middot; liturgija</div>
+        </div>
+      </div>
+
+      <div class="event reveal" data-date="2026-07-06">
+        <div class="date">
+          <span class="d">6.<em>7.</em></span>
+        </div>
+        <div class="prog">
+          <span class="tag koncert">Concert &middot; Grič Evenings (Večeri na Griču)</span>
+          <h3>Fauré: <em>Requiem</em>, op. 48</h3>
+          <div class="composers">Gabriel Fauré &middot; with soloists and orchestra</div>
+        </div>
+        <div class="loc">
+          <div class="place italic">Cathedral of the Assumption of the Blessed Virgin Mary</div>
+          <div class="time">Monday &middot; 8.00 pm</div>
+        </div>
+      </div>
+
+      <div class="event reveal" data-date="2026-08-29">
+        <div class="date">
+          <span class="d">29.<em>8.</em></span>
+        </div>
+        <div class="prog">
+          <span class="tag koncert">Concert &middot; guest performance</span>
+          <h3>Palmeri: <em>Misatango</em></h3>
+          <div class="composers">Martín Palmeri &middot; Mass in the Rhythm of Tango</div>
+        </div>
+        <div class="loc">
+          <div class="place italic">Trogir</div>
+          <div class="time">Saturday &middot; evening</div>
+        </div>
+      </div>
+
+      <div class="event reveal" data-date="2026-12-06">
+        <div class="date">
+          <span class="d">6.<em>12.</em></span>
+        </div>
+        <div class="prog">
+          <span class="tag koncert">Concert &middot; HRBA</span>
+          <h3>Händel: <em>Dixit Dominus</em> &middot; Vivaldi: <em>Magnificat</em> &amp; <em>Lauda Jerusalem</em></h3>
+          <div class="composers">Georg Friedrich Handel &middot; Antonio Vivaldi &middot; HRBA</div>
+        </div>
+        <div class="loc">
+          <div class="place italic">St. Mark's Church, Zagreb</div>
+          <div class="time">Sunday &middot; evening</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footnote">
+      <p class="italic">
+        Subscribe to the newsletter for updates on concerts, performances and new
+        programmes of Cantores Sancti Marci.
+      </p>
+      <a class="btn" href="#newsletter">Programme Updates <span class="arr"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== O ANSAMBLU ===================== -->
+<section class="ansambl pad-y" id="ansambl" data-screen-label="03 O Ansamblu">
+  <div class="wrap">
+    <div class="grid">
+      <div class="colL">
+        <div class="plate-stack">
+          <div class="plate plate-photo tall reveal" role="img" aria-label="The Cantores Sancti Marci choir singing in the Church of St. Francis Xavier" data-bg="media/zbor-cantorum.webp" style="background-position: center 35%">
+            <div class="cap tl">Ensemble</div>
+            <div class="cap">Choir &middot; Church of St. Francis Xavier</div>
+          </div>
+          <div class="small-row">
+            <div class="plate plate-photo flip-x small" role="img" aria-label="Organist Pavao Mašić at the organ of St. Mark's Church" data-bg="media/orgulje-pavao-masic.webp" style="background-position: 45% 50%">
+              <div class="cap tl">Organ</div>
+              <div class="cap">Pavao Mašić</div>
+            </div>
+            <div class="plate plate-photo small" role="img" aria-label="Ensemble singers during a performance at St. Mark's Church" data-bg="media/zbor-portret-tenori.webp" style="background-position: 60% 50%">
+              <div class="cap">Basses &middot; St. Mark's Church</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="colR">
+        <div class="eyebrow reveal"><span class="dot"></span>The Ensemble · §ii</div>
+        <h2 class="section-title display reveal" style="margin-top: 28px; --rd: .1s">
+          Sacred music in <em>the heart of Zagreb.</em>
+        </h2>
+        <div style="height: 36px"></div>
+        <p class="lead reveal" style="--rd: .2s">
+          Founded in its present form in 1988, Cantores Sancti Marci is the
+          direct successor to the Oratorio Choir of St. Mark's Church,
+          established in 1920.
+        </p>
+        <button class="ansambl-toggle" id="ansamblToggle" aria-expanded="false">
+          <span class="toggle-text">Read more</span>
+          <span class="arr-down">▾</span>
+        </button>
+        <div class="ansambl-expandable">
+        <p class="reveal" style="--rd: .3s">
+          For over more than a century of uninterrupted tradition, the choir
+          has been shaped by a distinguished succession of conductors,
+          including Rikard Rosskamp, Mladen Pozajić, Franjo Dugan, Čedomil
+          Dugan, Mladen Stahuljak, Vladimir Kranjčević, Ivan Repušić,
+          Tomislav Fačini, and Matija Fortuna. Today, the ensemble is led by
+          Jurica Petar Petrač, who has served as artistic director since
+          2011, while its long-standing collaboration with Pavao Mašić, chief
+          organist of St. Mark's Church and Assistant Professor at the
+          Academy of Music in Zagreb, dates back to 1999.
+        </p>
+        <p class="reveal" style="--rd: .35s">
+          The ensemble consists of around thirty singers and has performed
+          publicly more than 2,500 times, in addition to touring extensively
+          throughout Europe. Cantores Sancti Marci has won awards at choral
+          competitions in Croatia and abroad, including those held in Zagreb,
+          Split, Zadar, Bratislava, and Neerpelt. It also regularly
+          collaborates with Croatian Radiotelevision, Croatian Catholic
+          Radio, and leading Croatian and international orchestras and
+          musicians.
+        </p>
+
+        <div class="sig reveal" style="--rd: .45s">
+          <span class="gold italic">— Jurica Petar Petrač, Artistic Director</span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== PRIZNANJA ===================== -->
+<section class="priznanja" id="priznanja" data-screen-label="04 Awards">
+  <div class="wrap pz-head">
+    <div>
+      <div class="eyebrow reveal"><span class="dot"></span>Awards &middot; §iii</div>
+      <p class="pz-title reveal" style="--rd: .1s">
+        Twenty-one awards at competitions across <em>nine European countries</em> — from 1992 to today.
+      </p>
+    </div>
+    <a class="pz-link reveal" style="--rd: .15s" href="awards.html">All awards<span class="arrow">→</span></a>
+  </div>
+
+  <div class="pz-marquee reveal" style="--rd: .2s">
+    <div class="pz-track">
+      <span class="pz-item"><span class="y">1992</span><span class="a">Second place</span><span class="p">Köln</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">1995</span><span class="a">Second place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item hero"><span class="y">1996</span><span class="a">First prize</span><span class="p">Neerpelt</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">1998</span><span class="a">Silver plaque</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">1999</span><span class="a">Gold plaque</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">1999</span><span class="a">Third place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item hero"><span class="y">2001</span><span class="a">Golden Cathedral</span><span class="p">Split</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2002</span><span class="a">Second prize</span><span class="p">Neerpelt</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2003</span><span class="a">Second place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2003</span><span class="a">Silver plaque</span><span class="p">N. Vinodolski</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2003</span><span class="a">Silver medal</span><span class="p">Riva del Garda</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2004</span><span class="a">Bronze Cathedral</span><span class="p">Split</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2005</span><span class="a">First place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2013</span><span class="a">Two gold plaques</span><span class="p">Bratislava</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2014</span><span class="a">Gold plaque</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2015</span><span class="a">Gold plaque</span><span class="p">Ohrid</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2016</span><span class="a">Two gold plaques</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item hero"><span class="y">2017</span><span class="a">Two gold medals</span><span class="p">Riga</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2018</span><span class="a">Gold medal</span><span class="p">Prijedor</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item"><span class="y">2020</span><span class="a">Two gold plaques</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item hero"><span class="y">2024</span><span class="a">Gold plaque</span><span class="p">Ohrid</span></span>
+      <span class="pz-orn">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">1992</span><span class="a">Second place</span><span class="p">Köln</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">1995</span><span class="a">Second place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item hero" aria-hidden="true"><span class="y">1996</span><span class="a">First prize</span><span class="p">Neerpelt</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">1998</span><span class="a">Silver plaque</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">1999</span><span class="a">Gold plaque</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">1999</span><span class="a">Third place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item hero" aria-hidden="true"><span class="y">2001</span><span class="a">Golden Cathedral</span><span class="p">Split</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2002</span><span class="a">Second prize</span><span class="p">Neerpelt</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2003</span><span class="a">Second place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2003</span><span class="a">Silver plaque</span><span class="p">N. Vinodolski</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2003</span><span class="a">Silver medal</span><span class="p">Riva del Garda</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2004</span><span class="a">Bronze Cathedral</span><span class="p">Split</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2005</span><span class="a">First place</span><span class="p">Zadar</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2013</span><span class="a">Two gold plaques</span><span class="p">Bratislava</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2014</span><span class="a">Gold plaque</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2015</span><span class="a">Gold plaque</span><span class="p">Ohrid</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2016</span><span class="a">Two gold plaques</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item hero" aria-hidden="true"><span class="y">2017</span><span class="a">Two gold medals</span><span class="p">Riga</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2018</span><span class="a">Gold medal</span><span class="p">Prijedor</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item" aria-hidden="true"><span class="y">2020</span><span class="a">Two gold plaques</span><span class="p">Zagreb</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+      <span class="pz-item hero" aria-hidden="true"><span class="y">2024</span><span class="a">Gold plaque</span><span class="p">Ohrid</span></span>
+      <span class="pz-orn" aria-hidden="true">✣</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="pz-count reveal" style="--rd: .3s">
+      <strong>21</strong> awards &middot; <strong>9</strong> countries &middot; 1992&mdash;2024
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROSTOR ===================== -->
+<section class="prostor pad-y" id="prostor" data-screen-label="04 Prostor">
+  <div class="wrap">
+    <div class="header-row">
+      <div>
+        <div class="eyebrow reveal"><span class="dot"></span>The Space · §iii</div>
+        <h2 class="section-title display reveal" style="margin-top: 24px">St. Mark's<br><em>Church</em></h2>
+      </div>
+      <div class="quote reveal" style="--rd: .2s">
+        Music can act upon our senses to produce or induce feelings of
+        reverence, humility, fervor, assurance, or other feelings attuned to
+        the spirit of worship.”
+        <div style="margin-top: 18px; font-size: 0.55em; font-style: normal; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold)">— Spencer W. Kimball</div>
+      </div>
+    </div>
+    <button class="read-more-toggle" id="prostorToggle" aria-expanded="false">
+      <span class="toggle-text">Learn more about St. Mark's Church</span>
+      <span class="arr-down">▾</span>
+    </button>
+  </div>
+
+  <div class="expandable">
+  <div class="wrap">
+    <div class="plate plate-photo hero-img reveal" role="img" aria-label="Interior of St. Mark's Church with its Gothic vaults" data-bg="media/sv-marko-interijer.jpg" style="background-position: center 45%">
+      <div class="cap tl">The Interior</div>
+      <div class="cap">The Vaults</div>
+      <div class="cap tr">Upper Town &middot; Zagreb</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="columns">
+      <div class="col reveal">
+        <div class="num">i.</div>
+        <h4 class="italic">A history of the space</h4>
+        <p>
+          St. Mark's Church is one of Zagreb's oldest and most iconic landmarks. Standing at the heart of the Upper Town, it has served for centuries as a place of worship, civic life, and many of the city's defining historical moments. Its Romanesque and Gothic architectural elements bear witness to the centuries and political transformations that have shaped Zagreb.
+        </p>
+      </div>
+      <div class="col reveal" style="--rd: .1s">
+        <div class="num">ii.</div>
+        <h4 class="italic">A roof as the symbol of Zagreb</h4>
+        <p>
+          One of Zagreb's most recognisable landmarks, the church's vibrant glazed-tile roof displays the coats of arms of the Triune Kingdom of Croatia, Slavonia and Dalmatia alongside that of the City of Zagreb. More than an architectural flourish, it reflects the city's historical identity and its enduring ties to the wider Central European cultural sphere.
+        </p>
+      </div>
+      <div class="col reveal" style="--rd: .2s">
+        <div class="num">iii.</div>
+        <h4 class="italic">Acoustics and sound</h4>
+        <p>
+          Shaped by soaring vaults, stone walls, and a rich, lingering resonance, the interior of St. Mark's Church offers an exceptional acoustic for sacred music. Polyphony unfolds with remarkable depth and clarity, while the church's reverberation allows each phrase to resonate beyond its final note. Here, voices and architecture become inseparable parts of the same musical experience.
+        </p>
+      </div>
+      <div class="col reveal" style="--rd: .3s">
+        <div class="num">iv.</div>
+        <h4 class="italic">The art within the church</h4>
+        <p>
+          The interior brings together Gothic architecture and the work of some of Croatia's foremost twentieth-century artists. Murals by Jozo Kljaković enrich the walls, while sculptures by Ivan Meštrović lend the space a quiet monumentality. The result is an interior of exceptional artistic richness, where sacred architecture and modern Croatian art exist in remarkable harmony.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="plate plate-photo reveal" role="img" aria-label="Exterior view of St. Mark's Church on St. Mark's Square" data-bg="media/sv-marko-eksterijer.jpg" style="background-position: center 55%">
+        <div class="cap tl">v · St. Mark's Square</div>
+        <div class="cap">Upper Town · Zagreb</div>
+      </div>
+      <div class="plate plate-photo reveal" role="img" aria-label="The Gothic south portal of St. Mark's Church" data-bg="media/sv-marko-juzni-portal.jpg" style="--rd: .1s; background-position: center 30%">
+        <div class="cap">vi · The South portal</div>
+      </div>
+      <div class="plate plate-photo reveal" role="img" aria-label="Fresco of Moses by Jozo Kljaković, 1924" data-bg="media/freska-mojsije.webp" style="--rd: .2s; background-position: center 30%">
+        <div class="cap tl">vii · Fresco</div>
+        <div class="cap">Kljaković · Moses, 1924</div>
+      </div>
+      <div class="plate plate-photo reveal" role="img" aria-label="The choir gathered around the organ in the loft" data-bg="media/zbor-orgulje-krug.webp" style="--rd: .3s; background-position: center 50%">
+        <div class="cap">viii · Choir loft</div>
+      </div>
+      <div class="plate plate-photo reveal" role="img" aria-label="Stained-glass window, Adoration of the Shepherds, in St. Mark's Church" data-bg="media/sv-marko-vitraj-poklonstvo.webp" style="--rd: .4s; background-position: center 45%">
+        <div class="cap tl">ix · Stained glass</div>
+        <div class="cap">Adoration of the Shepherds</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ===================== ISTAKNUTA IZVEDBA ===================== -->
+<section class="feature" id="izvedba" data-screen-label="05 Istaknuta Izvedba">
+  <div class="stage yt-embed" data-yt="z_22bhg67fg">
+    <div class="media" style="background-image: url('https://i.ytimg.com/vi/z_22bhg67fg/maxresdefault.jpg')"></div>
+    <div class="scrim"></div>
+
+    <div class="top-meta reveal">
+      <div>
+        <strong>Featured performance</strong> &middot; §iv
+      </div>
+      <div class="right">
+        Veni, veni Emmanuel &middot; <strong>The Christmas Music Festival in Zagreb</strong><br>
+        <span style="opacity:.7">Church of St Francis Xavier &middot; 3 December 2017</span>
+      </div>
+    </div>
+
+    <button class="play-big" aria-label="Play video">
+      <span class="triangle"></span>
+      <span class="label">Watch the recording &middot; 4′ 45″</span>
+    </button>
+
+    <div class="bottom-copy reveal">
+      <div class="eyebrow"><span class="dot"></span>Zoltán Kodály</div>
+      <h2>
+        Veni, veni<br><em>Emmanuel.</em>
+      </h2>
+      <div class="credits-row">
+        <div class="m">
+          <div class="k">Composer</div>
+          <div class="v">Zoltán Kodály</div>
+        </div>
+        <div class="m">
+          <div class="k">Choir</div>
+          <div class="v">Cantores Sancti Marci</div>
+        </div>
+        <div class="m">
+          <div class="k">Venue</div>
+          <div class="v">Church of St Francis Xavier</div>
+        </div>
+        <div class="m">
+          <div class="k">Recording</div>
+          <div class="v">Marko Pletikosa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POSTANI CANTORES ===================== -->
+<section class="postani pad-y" id="postani" data-screen-label="06 Postani Cantores">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eyebrow reveal"><span class="dot"></span>Join the Cantores · §v</div>
+        <h2 class="section-title display reveal" style="margin-top: 24px">
+          Become a<br><em>Cantor.</em>
+        </h2>
+      </div>
+      <div class="right reveal" style="--rd: .15s">
+        <p class="lead" style="max-width: 520px">
+          Auditions for the 2026 season are now open.
+          We welcome singers who are eager to explore sacred and early music
+          in a collaborative ensemble dedicated to musical excellence.
+        </p>
+        <div class="cta-line">
+          <span class="cta-label">Auditions available by appointment</span>
+          <a class="email-link" href="mailto:cantores.sancti.marci@gmail.com">cantores.sancti.marci<span class="at">@</span>gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWSLETTER ===================== -->
+<section class="newsletter" id="newsletter" data-screen-label="07 Newsletter">
+  <div class="nl-glass" aria-label="Stained glass of St Mark in St. Mark's Church">
+    <div class="cap tl">Stained glass &middot; 19th c.</div>
+    <div class="cap bl">Saint Mark the Evangelist &middot; St. Mark's Church</div>
+  </div>
+  <div class="nl-content">
+    <div class="eyebrow reveal"><span class="dot"></span>Newsletter</div>
+    <h2 class="section-title display reveal" style="--rd: .1s">
+      Follow for <em>new performances</em> and <em>musical encounters</em> <br>from the Cantores.
+    </h2>
+    <p class="lead reveal" style="--rd: .2s">
+      Subscribe to the newsletter for information about concerts, liturgical
+      seasons and the ensemble's upcoming projects.
+    </p>
+    <form class="reveal" id="nl-form" style="--rd: .3s" action="https://3595bd97.sibforms.com/serve/MUIFAH-OVhHlkTNCMTNK8FJ1K_js9DjWdgXKPY-cde30UlDW2yxOq26NEQe0Py_rKCtArDct11UAn8CY0_OdKoyB74EMSI7B7VGraZcnZDmbUofl2PW91N8b0zfDomlLigGuGzk5YjOOnESYz_bU7RkRCoMV5fIx9KAGvG9FdI--yjVZ9Mz5AW9z3vC35-6NlQ4WmJp2Oy5DevxIlA==" method="POST" onsubmit="this.querySelector('button').textContent='Thank you.'">
+      <input type="email" name="EMAIL" placeholder="YOUR EMAIL" aria-label="Email address" required />
+      <input type="text" name="email_address_check" value="" style="display:none" tabindex="-1" autocomplete="off" />
+      <input type="hidden" name="locale" value="en" />
+      <button type="submit">Subscribe</button>
+    </form>
+    <label class="consent reveal" style="--rd: .35s">
+      <input type="checkbox" name="OPT_IN" value="1" form="nl-form" required />
+      I agree to receive your newsletters and accept the data privacy statement.
+    </label>
+    <div class="note">Subscribe or unsubscribe at any time.</div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+        <div class="footer-follow">
+      <div data-area="social">
+      <h5>Follow us</h5>
+      <ul class="social-icons">
+      <li><a href="https://www.instagram.com/cantores_sancti_marci" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram · @cantores_sancti_marci">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/>
+      </svg>
+      </a></li>
+      <li><a href="https://www.facebook.com/cantores.sancti.marci/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <path d="M14.5 8.5h-1.2c-.7 0-1.3.6-1.3 1.3V12h2.5"/>
+      <path d="M9.5 12.5H14"/>
+      <path d="M12 12v8"/>
+      </svg>
+      </a></li>
+      <!-- TikTok: dodati href kad kanal bude otvoren, zatim otkomentirati
+      <li><a href="#" aria-label="TikTok" title="TikTok">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/>
+      <path d="M14 4c.4 2.2 1.8 3.8 4 4"/>
+      </svg>
+      </a></li>
+      -->
+      <li><a href="https://www.youtube.com/@choircantoressanctimarci" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube · Ensemble channel">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+      <path d="M22 8.5c0-1.5-1-2.5-2.5-2.7C17.5 5.5 12 5.5 12 5.5s-5.5 0-7.5.3C3 6 2 7 2 8.5 1.8 10 1.8 12 1.8 12s0 2 .2 3.5c0 1.5 1 2.5 2.5 2.7 2 .3 7.5.3 7.5.3s5.5 0 7.5-.3c1.5-.2 2.5-1.2 2.5-2.7.2-1.5.2-3.5.2-3.5s0-2-.2-3.5z"/>
+      <path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/>
+      </svg>
+      </a></li>
+      <li><a href="https://open.spotify.com/artist/1IurE5dOD48I1V6AYUjDNi" target="_blank" rel="noopener" aria-label="Spotify" title="Spotify · Recordings & albums">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M7 9.5c3-1 7-1 10.5.5"/>
+      <path d="M7.5 13c2.5-.7 5.5-.5 8.5.8"/>
+      <path d="M8 16c2-.5 4-.4 6 .5"/>
+      </svg>
+      </a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="ornament">✣  ·  ✣  ·  ✣</div>
+    <div class="grid">
+      <div class="kontakt-block" data-area="kontakt">
+        <h5>Contact</h5>
+        <ul>
+          <li class="k-contact k-addr">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21c4.5-4.2 7-7.6 7-11a7 7 0 1 0-14 0c0 3.4 2.5 6.8 7 11z"/>
+              <circle cx="12" cy="10" r="2.4"/>
+            </svg>
+            <a href="https://www.google.com/maps/search/?api=1&query=Crkva%20sv.%20Marka%2C%20Trg%20sv.%20Marka%205%2C%2010000%20Zagreb" target="_blank" rel="noopener" aria-label="Open location in Google Maps"><span>St. Mark's Church · Trg sv. Marka 5 · 10000 Zagreb, Croatia</span></a>
+          </li>
+          <li class="k-contact">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="M3.5 6.5 12 12.5l8.5-6"/>
+            </svg>
+            <a href="mailto:cantores.sancti.marci@gmail.com">cantores.sancti.marci@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="meta">
+      <div>© 2026 · Cantores Sancti Marci · Zagreb</div>
+      <div><a href="press-kit.html">Press kit</a> &middot; <a href="privacy.html">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ---- hide past concerts from the schedule
+  (function hidePastEvents(){
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    document.querySelectorAll('.koncerti .event[data-date]').forEach(ev => {
+      const d = new Date(ev.getAttribute('data-date') + 'T00:00:00');
+      if (d < today) ev.classList.add('is-past');
+    });
+  })();
+
+  // ---- hamburger / mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = () => {
+    nav.classList.remove('menu-open');
+    mobileMenu.classList.remove('open');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+  const openMenu = () => {
+    nav.classList.add('menu-open');
+    mobileMenu.classList.add('open');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  };
+  if (hamburger){
+    hamburger.addEventListener('click', () => {
+      if (mobileMenu.classList.contains('open')) closeMenu(); else openMenu();
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+    });
+  }
+
+  // ---- ansambl read more toggle (mobile)
+  const ansamblToggle = document.getElementById('ansamblToggle');
+  if (ansamblToggle){
+    const colR = ansamblToggle.parentElement;
+    const txtA = ansamblToggle.querySelector('.toggle-text');
+    ansamblToggle.addEventListener('click', () => {
+      const expanded = colR.classList.toggle('expanded');
+      ansamblToggle.setAttribute('aria-expanded', expanded);
+      txtA.textContent = expanded ? 'Show less' : 'Read more';
+    });
+  }
+
+  // ---- prostor read more toggle (mobile)
+  const prostorToggle = document.getElementById('prostorToggle');
+  if (prostorToggle){
+    const prostor = document.getElementById('prostor');
+    const txt = prostorToggle.querySelector('.toggle-text');
+    prostorToggle.addEventListener('click', () => {
+      const expanded = prostor.classList.toggle('expanded');
+      prostorToggle.setAttribute('aria-expanded', expanded);
+      txt.textContent = expanded ? 'Show less' : 'Learn more about St Mark\'s Church';
+    });
+  }
+
+  // ---- nav scrolled state
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', window.scrollY > 30);
+    // parallax
+    document.querySelectorAll('[data-parallax]').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const center = rect.top + rect.height / 2;
+      const offset = (center - window.innerHeight / 2);
+      const speed = parseFloat(el.dataset.speed || 0.05);
+      const flip = el.classList.contains('flip-x') ? ' scaleX(-1)' : '';
+      el.style.transform = `translate3d(0, ${ -offset * speed }px, 0)${flip}`;
+    });
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ---- reveal observer
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---- YouTube embed on play
+  document.querySelectorAll('.yt-embed').forEach(wrap => {
+    const btn = wrap.querySelector('.play, .play-big');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const id = wrap.dataset.yt;
+      if (!id) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      const mount = wrap.querySelector('.media') || wrap;
+      if (mount.classList.contains('media')) {
+        mount.style.backgroundImage = 'none';
+        mount.appendChild(iframe);
+      } else {
+        iframe.style.cssText = 'position:absolute; inset:0; width:100%; height:100%; border:0; z-index:6';
+        wrap.appendChild(iframe);
+      }
+      wrap.classList.add('playing');
+    });
+  });
+</script>
+
+<script>
+  // Apply previous tweak defaults as static values so removing the panel
+  // doesn't break the look (grain + italic titles).
+  document.documentElement.style.setProperty('--grain-opacity', '0.05');
+  document.documentElement.style.setProperty('--title-italic-style', 'italic');
+</script>
+
+
+<script>
+(function(){
+  var set = function(el){ var u = el.getAttribute('data-bg'); if(u){ el.style.backgroundImage = "url('"+u+"')"; el.removeAttribute('data-bg'); } };
+  var nodes = document.querySelectorAll('[data-bg]');
+  if(!('IntersectionObserver' in window)){ nodes.forEach(set); return; }
+  var io = new IntersectionObserver(function(ents,o){ ents.forEach(function(e){ if(e.isIntersecting){ set(e.target); o.unobserve(e.target); } }); }, { rootMargin: '300px 0px' });
+  nodes.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
