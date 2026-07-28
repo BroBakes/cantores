@@ -1985,6 +1985,16 @@
   }
   .reveal.in{ opacity: 1; transform: translateY(0) }
 
+  /* Hero content is always above the fold on load — drive its entrance with a
+     pure CSS animation instead of the scroll IntersectionObserver so it isn't
+     gated behind JS parse/execution, which was delaying LCP paint. */
+  @keyframes heroReveal{ from{ opacity:0; transform: translateY(28px) } to{ opacity:1; transform: translateY(0) } }
+  .hero .reveal{
+    opacity: 1; transform: none; transition: none;
+    animation: heroReveal 1.2s cubic-bezier(.2,.7,.2,1) both;
+    animation-delay: var(--rd, 0s);
+  }
+
   /* parallax helper */
   [data-parallax]{ will-change: transform }
 
@@ -2926,17 +2936,28 @@
 
   // ---- nav scrolled state
   const nav = document.getElementById('nav');
-  const onScroll = () => {
+  const parallaxEls = Array.from(document.querySelectorAll('[data-parallax]'));
+  let scrollTicking = false;
+  const updateScrollState = () => {
     nav.classList.toggle('scrolled', window.scrollY > 30);
-    // parallax
-    document.querySelectorAll('[data-parallax]').forEach(el => {
+    // parallax — batch all reads, then all writes to avoid layout thrashing
+    const vh = window.innerHeight;
+    const writes = parallaxEls.map(el => {
       const rect = el.getBoundingClientRect();
       const center = rect.top + rect.height / 2;
-      const offset = (center - window.innerHeight / 2);
+      const offset = (center - vh / 2);
       const speed = parseFloat(el.dataset.speed || 0.05);
       const flip = el.classList.contains('flip-x') ? ' scaleX(-1)' : '';
-      el.style.transform = `translate3d(0, ${ -offset * speed }px, 0)${flip}`;
+      return { el, value: `translate3d(0, ${ -offset * speed }px, 0)${flip}` };
     });
+    writes.forEach(({ el, value }) => { el.style.transform = value; });
+    scrollTicking = false;
+  };
+  const onScroll = () => {
+    if (!scrollTicking){
+      scrollTicking = true;
+      requestAnimationFrame(updateScrollState);
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
