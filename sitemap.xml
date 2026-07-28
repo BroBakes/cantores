@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cantoressanctimarci.hr/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="hr" href="https://cantoressanctimarci.hr/" />
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://cantoressanctimarci.hr/en.html</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="hr" href="https://cantoressanctimarci.hr/" />
@@ -21,13 +21,16 @@
   </url>
   <url>
     <loc>https://cantoressanctimarci.hr/nagrade.html</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://cantoressanctimarci.hr/nagrade.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cantoressanctimarci.hr/awards.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cantoressanctimarci.hr/nagrade.html" />
   </url>
   <url>
     <loc>https://cantoressanctimarci.hr/awards.html</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="hr" href="https://cantoressanctimarci.hr/nagrade.html" />
@@ -36,7 +39,7 @@
   </url>
   <url>
     <loc>https://cantoressanctimarci.hr/privatnost.html</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="hr" href="https://cantoressanctimarci.hr/privatnost.html" />
@@ -45,7 +48,7 @@
   </url>
   <url>
     <loc>https://cantoressanctimarci.hr/privacy.html</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="hr" href="https://cantoressanctimarci.hr/privatnost.html" />
