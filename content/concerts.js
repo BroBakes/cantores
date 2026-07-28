@@ -1,7 +1,7 @@
 (function(){
   function renderConcert(ev, lang){
     var div = document.createElement('div');
-    div.className = 'event reveal';
+    div.className = 'event';
     div.setAttribute('data-date', ev.date);
     div.innerHTML =
       '<div class="date"><span class="d">' + ev.day + '.<em>' + ev.month + '.</em></span></div>' +
@@ -66,12 +66,6 @@
         if (d < today) el.classList.add('is-past');
         list.appendChild(el);
       });
-      var io = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-        });
-      }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
-      list.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
       injectMusicEvents(data, lang);
       return data;
     });
