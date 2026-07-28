@@ -2195,8 +2195,32 @@
      wraps to the next line, drop the arrow entirely. */
   @media (max-width: 700px){
     .postani .cta-line .cta-label::after{ content: none; }
+  }  /* -------- cookie consent -------- */
+  .cc-banner{
+    position:fixed; left:0; right:0; bottom:0; z-index:3000;
+    background:#0a0807; color:#e8ddc6; border-top:1px solid rgba(197,165,114,0.35);
+    padding:20px clamp(20px,4vw,40px); display:flex; flex-wrap:wrap; gap:16px 28px;
+    align-items:center; justify-content:space-between;
+    font-family: var(--serif); transform:translateY(110%); transition:transform .5s ease;
   }
+  .cc-banner.show{ transform:translateY(0) }
+  .cc-banner p{ margin:0; font-size:14px; line-height:1.6; max-width:640px; color:#d8cdb5 }
+  .cc-banner a{ color:#c5a572; text-decoration:underline }
+  .cc-actions{ display:flex; gap:12px; flex-wrap:wrap }
+  .cc-actions button{
+    font-family:var(--serif); font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    padding:12px 20px; min-height:44px; border-radius:2px; cursor:pointer; border:1px solid #c5a572;
+    background:transparent; color:#f4ecd8; transition:background .25s, color .25s;
+  }
+  .cc-actions button.cc-accept{ background:#c5a572; color:#1a1310 }
+  .cc-actions button:hover{ background:#c5a572; color:#1a1310 }
+  #cc-settings-link{ cursor:pointer; background:none; border:none; padding:0; font:inherit; color:inherit }
 </style>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+</script>
 </head>
 <body>
 
@@ -2798,7 +2822,7 @@
     </div>
     <div class="meta">
       <div>© 2026 · Cantores Sancti Marci · Zagreb</div>
-      <div><a href="press-kit.html">Press kit</a> &middot; <a href="privatnost.html">Pravila privatnosti</a></div>
+      <div><a href="press-kit.html">Press kit</a> &middot; <a href="privatnost.html">Pravila privatnosti</a> &middot; <button id="cc-settings-link">Postavke kolačića</button></div>
     </div>
   </div>
 </footer>
@@ -2936,6 +2960,42 @@
   if(!('IntersectionObserver' in window)){ nodes.forEach(set); return; }
   var io = new IntersectionObserver(function(ents,o){ ents.forEach(function(e){ if(e.isIntersecting){ set(e.target); o.unobserve(e.target); } }); }, { rootMargin: '300px 0px' });
   nodes.forEach(function(el){ io.observe(el); });
+})();
+</script>
+<div class="cc-banner" id="ccBanner" role="dialog" aria-label="Postavke kolačića" aria-live="polite">
+  <p>Koristimo Google Analytics kolačiće za razumijevanje posjećenosti stranice. Vaši podaci se ne prikupljaju dok ne pristanete. Više u <a href="privatnost.html">Pravilima privatnosti</a>.</p>
+  <div class="cc-actions">
+    <button type="button" class="cc-reject" id="ccReject">Odbij</button>
+    <button type="button" class="cc-accept" id="ccAccept">Prihvati</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='ccm_consent';
+  var banner=document.getElementById('ccBanner');
+  function loadGA(){
+    if(window.__gaLoaded) return;
+    window.__gaLoaded=true;
+    gtag('consent','update',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+    var s=document.createElement('script');
+    s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-GXDLFL6PVM';
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config','G-GXDLFL6PVM');
+  }
+  function show(){ banner.classList.add('show') }
+  function hide(){ banner.classList.remove('show') }
+  var stored=localStorage.getItem(KEY);
+  if(stored==='granted'){ loadGA(); }
+  else if(stored!=='denied'){ show(); }
+  document.getElementById('ccAccept').addEventListener('click', function(){
+    localStorage.setItem(KEY,'granted'); loadGA(); hide();
+  });
+  document.getElementById('ccReject').addEventListener('click', function(){
+    localStorage.setItem(KEY,'denied'); hide();
+  });
+  var settingsLink=document.getElementById('cc-settings-link');
+  if(settingsLink) settingsLink.addEventListener('click', show);
 })();
 </script>
 </body>
