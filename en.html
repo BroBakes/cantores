@@ -364,6 +364,7 @@
   nav.top .brand{
     font-family: var(--serif);
     font-weight: 400;
+    white-space: nowrap;
     font-size: 16px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -383,6 +384,7 @@
   nav.top ul a{
     font-family: var(--serif);
     font-weight: 500;
+    white-space: nowrap;
     font-size: 12px;
     letter-spacing: 0.28em;
     text-transform: uppercase;
@@ -397,8 +399,14 @@
   }
   nav.top ul a:hover{ color: var(--nav-text) }
   nav.top ul a:hover::after{ right: 0 }
+  @media (max-width: 1180px){
+    nav.top ul{ gap: clamp(12px, 1.6vw, 22px) }
+    nav.top ul a{ font-size: 11px; letter-spacing: 0.18em }
+    nav.top .meta{ gap: 12px; font-size: 11px }
+  }
   nav.top .meta{
     display:flex; justify-content:flex-end; align-items:center; gap: 22px;
+    white-space: nowrap;
     font-family: var(--serif);
     font-weight: 500;
     font-size: 12px;
@@ -2008,6 +2016,14 @@
   #tweaks-mount{ position: relative; z-index: 10000 }
 
   /* -------- responsive -------- */
+  @media (max-width: 1300px){
+    nav.top{ grid-template-columns: 1fr auto; column-gap: 18px; align-items: start; }
+    nav.top .brand{ font-size: 14px; letter-spacing: 0.12em; line-height: 1.3; align-self: center; white-space: nowrap; }
+    nav.top .brand .mark{ margin-right: 8px; }
+    nav.top ul{ display:none }
+    nav.top .meta{ display:none }
+    nav.top .hamburger{ display:flex }
+  }
   @media (max-width: 980px){
     .ansambl .grid{ grid-template-columns: 1fr }
     .ansambl.pad-y{ padding-top: 36px }
@@ -2041,12 +2057,6 @@
     .koncerti .event .loc{ grid-area: loc }
     .koncerti .event .price{ grid-area: price }
     .koncerti .event .cta{ grid-area: cta }
-    nav.top{ grid-template-columns: 1fr auto; column-gap: 18px; align-items: start; }
-    nav.top .brand{ font-size: 14px; letter-spacing: 0.12em; line-height: 1.3; align-self: center; }
-    nav.top .brand .mark{ margin-right: 8px; }
-    nav.top ul{ display:none }
-    nav.top .meta{ display:none }
-    nav.top .hamburger{ display:flex }
     .hero .marquee{ font-size: 11px; letter-spacing: 0.24em; line-height: 1.7; }
     .hero .scrollhint{ display: none }
     .hero .ctas{ flex-direction: column; align-items: stretch; width: 100%; max-width: 320px }
