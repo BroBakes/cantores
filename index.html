@@ -24,11 +24,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script type="application/ld+json" id="ld-json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"MusicGroup","@id":"https://cantoressanctimarci.hr/#musicgroup","name":"Cantores Sancti Marci","url":"https://cantoressanctimarci.hr/","description":"Cantores Sancti Marci — oratorijski zbor Crkve svetog Marka u Zagrebu, posvećen sakralnoj i ranoj glazbi.","logo":"https://cantoressanctimarci.hr/favicon.png","image":"https://cantoressanctimarci.hr/media/og-image.jpg","sameAs":["https://www.instagram.com/cantores_sancti_marci","https://www.facebook.com/cantores.sancti.marci/","https://www.youtube.com/@choircantoressanctimarci"],"email":"cantores.sancti.marci@gmail.com","genre":["Sacred choral music","Gregorian chant","Renaissance polyphony","Contemporary sacred music"],"director":{"@type":"Person","name":"Jurica Petar Petrač"},"location":{"@type":"Place","name":"Crkva sv. Marka","address":{"@type":"PostalAddress","streetAddress":"Trg svetog Marka 5","addressLocality":"Zagreb","postalCode":"10000","addressCountry":"HR"}}},
+{"@type":"WebSite","@id":"https://cantoressanctimarci.hr/#website","url":"https://cantoressanctimarci.hr/","name":"Cantores Sancti Marci","publisher":{"@id":"https://cantoressanctimarci.hr/#musicgroup"}},
+{"@type":"WebPage","@id":"https://cantoressanctimarci.hr/#webpage","url":"https://cantoressanctimarci.hr/","inLanguage":"hr","isPartOf":{"@id":"https://cantoressanctimarci.hr/#website"},"about":{"@id":"https://cantoressanctimarci.hr/#musicgroup"},"mainEntity":{"@id":"https://cantoressanctimarci.hr/#musicgroup"}},
+{"@type":"MusicEvent","@id":"https://cantoressanctimarci.hr/#event-2026-08-29","name":"Palmeri: Misatango","description":"Martín Palmeri · misa u ritmu tanga","startDate":"2026-08-29","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Trogir"},"performer":{"@id":"https://cantoressanctimarci.hr/#musicgroup"},"url":"https://cantoressanctimarci.hr/#koncerti","inLanguage":"hr"},
+{"@type":"MusicEvent","@id":"https://cantoressanctimarci.hr/#event-2026-12-06","name":"Händel: Dixit Dominus · Vivaldi: Magnificat & Lauda Jerusalem","description":"Georg Friedrich Händel · Antonio Vivaldi · HRBA","startDate":"2026-12-06","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Crkva sv. Marka","address":{"@type":"PostalAddress","streetAddress":"Trg svetog Marka 5","addressLocality":"Zagreb","postalCode":"10000","addressCountry":"HR"}},"performer":{"@id":"https://cantoressanctimarci.hr/#musicgroup"},"url":"https://cantoressanctimarci.hr/#koncerti","inLanguage":"hr"}
+]}
+</script>
 <link rel="manifest" href="site.webmanifest" />
 <link rel="preload" as="image" href="media/marko-lada-publika.webp" />
 <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-600-normal-latin.woff2" crossorigin="anonymous" />
 <link rel="preload" href="fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="fonts/fonts.css"></noscript>
+<script src="concerts.js"></script>
 <style>
   /* -------- design tokens -------- */
   :root{
@@ -410,21 +420,17 @@
     cursor:pointer;
   }
   .btn .arr{
-    display:inline-block; width: 22px; height:1px; background: var(--gold);
-    position:relative; transition: width .4s ease;
+    display:inline-block; color: var(--gold); font-style: normal;
+    font-size: 1.3em; line-height: 1;
+    transition: transform .3s ease;
   }
-  .btn .arr::after{
-    content:""; position:absolute; right:-1px; top:-3px;
-    width: 7px; height:7px; border-top:1px solid var(--gold); border-right:1px solid var(--gold);
-    transform: rotate(45deg);
-  }
+  .btn .arr::before{ content: "\2192"; }
   .btn:hover{ border-color: var(--burgundy); background: rgba(93,39,48,0.10); color: var(--ivory) }
-  .btn:hover .arr{ width: 34px }
+  .btn:hover .arr{ transform: translateX(6px) }
   .btn.solid{
     background: #2a1f15; color: var(--ink); border-color: #2a1f15;
   }
-  .btn.solid .arr{ background: var(--gold-warm) }
-  .btn.solid .arr::after{ border-color: var(--gold-warm) }
+  .btn.solid .arr{ color: var(--gold-warm) }
   .btn.solid:hover{ background: var(--burgundy); border-color: var(--burgundy); color: var(--ink) }
 
   /* -------- reusable: chiaroscuro plate -------- */
@@ -659,8 +665,7 @@
     color: #1a1310;
     border-color: #f4ecd8;
   }
-  .hero .btn.solid .arr{ background: #1a1310 }
-  .hero .btn.solid .arr::after{ border-color: #1a1310 }
+  .hero .btn.solid .arr{ color: #1a1310 }
   .hero .btn:not(.solid){
     background: rgba(10,8,7,0.55);
     border-color: rgba(197,165,114,0.55);
@@ -2285,97 +2290,7 @@
       </div>
     </div>
 
-    <div class="list">
-      <div class="event reveal" data-date="2026-05-24">
-        <div class="date">
-          <span class="d">24.<em>5.</em></span>
-        </div>
-        <div class="prog">
-          <span class="tag misa">Misa &middot; Duhovi</span>
-          <h3>Haydn: <em>Missa brevis</em> in F &middot; <em>Factus est repente</em></h3>
-          <div class="composers">Joseph Haydn &middot; Antifona Duhova</div>
-        </div>
-        <div class="loc">
-          <div class="place italic">Crkva sv. Marka, Zagreb</div>
-          <div class="time">Nedjelja &middot; liturgija</div>
-        </div>
-      </div>
-
-      <div class="event reveal" data-date="2026-05-31">
-        <div class="date">
-          <span class="d">31.<em>5.</em></span>
-        </div>
-        <div class="prog">
-          <span class="tag nastup">Nastup &middot; Dan grada Zagreba</span>
-          <h3>Himna <em>Majke Božje od Kamenitih vrata</em></h3>
-          <div class="composers">Svečani gradski nastup &middot; uz Dan grada</div>
-        </div>
-        <div class="loc">
-          <div class="place italic">Kamenita vrata, Zagreb</div>
-          <div class="time">Nedjelja &middot; 21.00</div>
-        </div>
-      </div>
-
-      <div class="event reveal" data-date="2026-06-14">
-        <div class="date">
-          <span class="d">14.<em>6.</em></span>
-        </div>
-        <div class="prog">
-          <span class="tag misa">Misa</span>
-          <h3>Vidaković: <em>III. Staroslavenska misa</em></h3>
-          <div class="composers">Albe Vidaković &middot; staroslavenski liturgijski tekst</div>
-        </div>
-        <div class="loc">
-          <div class="place italic">Crkva sv. Marka, Zagreb</div>
-          <div class="time">Nedjelja &middot; liturgija</div>
-        </div>
-      </div>
-
-      <div class="event reveal" data-date="2026-07-06">
-        <div class="date">
-          <span class="d">6.<em>7.</em></span>
-        </div>
-        <div class="prog">
-          <span class="tag koncert">Koncert &middot; Ljetne večeri na Griču</span>
-          <h3>Fauré: <em>Requiem</em>, op. 48</h3>
-          <div class="composers">Gabriel Fauré &middot; sa solistima i orkestrom</div>
-        </div>
-        <div class="loc">
-          <div class="place italic">Katedrala Uznesenja Blažene Djevice Marije</div>
-          <div class="time">Ponedjeljak &middot; 20.00</div>
-        </div>
-      </div>
-
-      <div class="event reveal" data-date="2026-08-29">
-        <div class="date">
-          <span class="d">29.<em>8.</em></span>
-        </div>
-        <div class="prog">
-          <span class="tag koncert">Koncert &middot; gostovanje</span>
-          <h3>Palmeri: <em>Misatango</em></h3>
-          <div class="composers">Martín Palmeri &middot; misa u ritmu tanga</div>
-        </div>
-        <div class="loc">
-          <div class="place italic">Trogir</div>
-          <div class="time">Subota &middot; navečer</div>
-        </div>
-      </div>
-
-      <div class="event reveal" data-date="2026-12-06">
-        <div class="date">
-          <span class="d">6.<em>12.</em></span>
-        </div>
-        <div class="prog">
-          <span class="tag koncert">Koncert &middot; HRBA</span>
-          <h3>Händel: <em>Dixit Dominus</em> &middot; Vivaldi: <em>Magnificat</em> &amp; <em>Lauda Jerusalem</em></h3>
-          <div class="composers">Georg Friedrich Händel &middot; Antonio Vivaldi &middot; HRBA</div>
-        </div>
-        <div class="loc">
-          <div class="place italic">Crkva sv. Marka, Zagreb</div>
-          <div class="time">Nedjelja &middot; navečer</div>
-        </div>
-      </div>
-    </div>
+    <div class="list" id="concerts-list"></div>
 
     <div class="footnote">
       <p class="italic">
@@ -2873,15 +2788,8 @@
 </footer>
 
 <script>
-  // ---- hide past concerts from the schedule
-  (function hidePastEvents(){
-    const today = new Date();
-    today.setHours(0,0,0,0);
-    document.querySelectorAll('.koncerti .event[data-date]').forEach(ev => {
-      const d = new Date(ev.getAttribute('data-date') + 'T00:00:00');
-      if (d < today) ev.classList.add('is-past');
-    });
-  })();
+  // ---- concerts render from shared data source (also feeds MusicEvent JSON-LD)
+  if (window.renderConcerts) renderConcerts('hr');
 
   // ---- hamburger / mobile menu
   const hamburger = document.getElementById('hamburger');
