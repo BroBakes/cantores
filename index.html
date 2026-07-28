@@ -21,13 +21,14 @@
 <meta name="twitter:title" content="Cantores Sancti Marci — Oratorijski zbor Crkve svetog Marka, Zagreb" />
 <meta name="twitter:description" content="Cantores Sancti Marci — oratorijski zbor Crkve svetog Marka u Zagrebu, posvećen sakralnoj i ranoj glazbi. Koncerti, liturgijske izvedbe i audicije za sezonu 2026." />
 <meta name="twitter:image" content="https://cantoressanctimarci.hr/media/og-image.jpg" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="manifest" href="site.webmanifest" />
 <link rel="preload" as="image" href="media/marko-lada-publika.webp" />
 <link rel="preload" as="font" type="font/woff2" href="fonts/cormorant-garamond-600-normal-latin.woff2" crossorigin="anonymous" />
-<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="preload" href="fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="fonts/fonts.css"></noscript>
 <style>
   /* -------- design tokens -------- */
   :root{
@@ -1147,7 +1148,7 @@
   }
   .prostor.expanded .read-more-toggle .arr-down{ transform: rotate(180deg) }
   .prostor .expandable{ display: contents }
-  .prostor .col h4{
+  .prostor .col h3{
     font-family: var(--serif);
     font-weight: 400;
     font-style: italic;
@@ -1389,6 +1390,7 @@
     display:grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 96px);
     align-items: start;
     margin-bottom: 0;
+    --gold-warm: #7a5a1f; /* darkened for AA contrast on this light panel */
   }
   .postani .head .right{ padding-bottom: 4px }
   /* halo is no longer needed since head sits inside a parchment panel */
@@ -1801,7 +1803,7 @@
     padding-bottom: 18px;
     border-bottom: 1px solid rgba(197,165,114,0.15);
   }
-  footer .kontakt-block h5{ margin-bottom: 12px; }
+  footer .kontakt-block h3{ margin-bottom: 12px; }
   footer .kontakt-block ul{
     display: flex;
     flex-direction: column;
@@ -1848,7 +1850,7 @@
   footer .kontakt-block li:first-child{
     margin-bottom: 0;
   }
-  footer h5{
+  footer h3{
     font-family: var(--serif);
     font-weight: 500;
     font-size: 11px;
@@ -1897,8 +1899,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border: 1px solid rgba(197,165,114,0.30);
     border-radius: 50%;
     color: var(--ivory-soft);
@@ -1942,7 +1944,7 @@
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.06'/></svg>");
   }
   footer .footer-follow > *{ position: relative }
-  footer .footer-follow h5{
+  footer .footer-follow h3{
     color: #e8cf9a;
     font-weight: 600;
     margin-bottom: 22px;
@@ -2052,7 +2054,7 @@
       text-align: left;
       padding-bottom: 40px;
     }
-    footer .kontakt-block h5{ text-align: left; }
+    footer .kontakt-block h3{ text-align: left; }
     footer .kontakt-block ul{ align-items: flex-start; }
     footer .kontakt-block li.k-contact{ justify-content: flex-start; align-items: flex-start; gap: 9px; }
     footer .kontakt-block li.k-contact svg{ margin-top: 3px; }
@@ -2061,7 +2063,7 @@
     footer .kontakt-block li.k-addr{ align-items: center; font-weight: 700; }
     footer .kontakt-block li.k-contact a{ font-weight: 700; }
     footer .kontakt-block li.k-addr svg{ margin-top: 0; }
-    footer h5{ margin-bottom: 14px; font-size: 10px }
+    footer h3{ margin-bottom: 14px; font-size: 10px }
     footer li{ font-size: 14px; margin-bottom: 8px }
     footer .ornament{ margin-bottom: 18px; font-size: 16px }
     footer .footer-follow{ margin-bottom: 20px; padding: 22px var(--gut) 20px; }
@@ -2608,7 +2610,7 @@
     <div class="columns">
       <div class="col reveal">
         <div class="num">i.</div>
-        <h4 class="italic">Povijest prostora</h4>
+        <h3 class="italic">Povijest prostora</h3>
         <p>
           Crkva svetog Marka jedna je od najstarijih i najprepoznatljivijih
           sakralnih građevina Zagreba. Smještena u središtu Gornjega grada,
@@ -2620,7 +2622,7 @@
       </div>
       <div class="col reveal" style="--rd: .1s">
         <div class="num">ii.</div>
-        <h4 class="italic">Krov kao simbol Zagreba</h4>
+        <h3 class="italic">Krov kao simbol Zagreba</h3>
         <p>
           Prepoznatljivi šareni krov od glaziranih pločica jedan je od
           vizualnih simbola Zagreba. Na njemu se nalaze grbovi Trojedne
@@ -2632,7 +2634,7 @@
       </div>
       <div class="col reveal" style="--rd: .2s">
         <div class="num">iii.</div>
-        <h4 class="italic">Akustika i zvuk</h4>
+        <h3 class="italic">Akustika i zvuk</h3>
         <p>
           Unutrašnjost crkve obilježena je visokim svodovima, kamenim
           površinama i dugim odjekom koji oblikuje način na koji se glazba
@@ -2644,7 +2646,7 @@
       </div>
       <div class="col reveal" style="--rd: .3s">
         <div class="num">iv.</div>
-        <h4 class="italic">Umjetnost unutar crkve</h4>
+        <h3 class="italic">Umjetnost unutar crkve</h3>
         <p>
           Unutrašnjost crkve oblikovali su neki od najvažnijih hrvatskih
           umjetnika 20. stoljeća. Zidove je oslikao Jozo Kljaković, dok se u
@@ -2788,7 +2790,7 @@
 <footer>
         <div class="footer-follow">
       <div data-area="social">
-      <h5>Pratite nas</h5>
+      <h3>Pratite nas</h3>
       <ul class="social-icons">
       <li><a href="https://www.instagram.com/cantores_sancti_marci" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram · @cantores_sancti_marci">
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
@@ -2834,7 +2836,7 @@
     <div class="ornament">✣  ·  ✣  ·  ✣</div>
     <div class="grid">
       <div class="kontakt-block" data-area="kontakt">
-        <h5>Kontakt</h5>
+        <h3>Kontakt</h3>
         <ul>
           <li class="k-contact k-addr">
             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

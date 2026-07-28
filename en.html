@@ -21,11 +21,12 @@
 <meta name="twitter:title" content="Cantores Sancti Marci — Oratorio Choir of St. Mark's Church, Zagreb" />
 <meta name="twitter:description" content="Cantores Sancti Marci — oratorio choir of St. Mark's Church in Zagreb, dedicated to sacred and early music. Concerts, liturgical performances, and auditions for the 2026 season." />
 <meta name="twitter:image" content="https://cantoressanctimarci.hr/media/og-image.jpg" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="manifest" href="site.webmanifest" />
-<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="preload" href="fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="fonts/fonts.css"></noscript>
 <style>
   /* -------- design tokens -------- */
   :root{
@@ -1145,7 +1146,7 @@
   }
   .prostor.expanded .read-more-toggle .arr-down{ transform: rotate(180deg) }
   .prostor .expandable{ display: contents }
-  .prostor .col h4{
+  .prostor .col h3{
     font-family: var(--serif);
     font-weight: 400;
     font-style: italic;
@@ -1387,6 +1388,7 @@
     display:grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 96px);
     align-items: start;
     margin-bottom: 0;
+    --gold-warm: #7a5a1f; /* darkened for AA contrast on this light panel */
   }
   .postani .head .right{ padding-bottom: 4px }
   /* halo is no longer needed since head sits inside a parchment panel */
@@ -1793,7 +1795,7 @@
     padding-bottom: 18px;
     border-bottom: 1px solid rgba(197,165,114,0.15);
   }
-  footer .kontakt-block h5{ margin-bottom: 12px; }
+  footer .kontakt-block h3{ margin-bottom: 12px; }
   footer .kontakt-block ul{
     display: flex;
     flex-direction: column;
@@ -1839,7 +1841,7 @@
   footer .kontakt-block li:first-child{
     margin-bottom: 0;
   }
-  footer h5{
+  footer h3{
     font-family: var(--serif);
     font-weight: 500;
     font-size: 11px;
@@ -1888,8 +1890,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border: 1px solid rgba(197,165,114,0.30);
     border-radius: 50%;
     color: var(--ivory-soft);
@@ -1932,7 +1934,7 @@
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='0.9'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.06'/></svg>");
   }
   footer .footer-follow > *{ position: relative }
-  footer .footer-follow h5{
+  footer .footer-follow h3{
     color: #e8cf9a;
     font-weight: 600;
     margin-bottom: 22px;
@@ -2043,7 +2045,7 @@
       text-align: left;
       padding-bottom: 24px;
     }
-    footer .kontakt-block h5{ text-align: left; }
+    footer .kontakt-block h3{ text-align: left; }
     footer .kontakt-block ul{ align-items: flex-start; }
     footer .kontakt-block li.k-contact{ justify-content: flex-start; align-items: flex-start; gap: 9px; }
     footer .kontakt-block li.k-contact svg{ margin-top: 3px; }
@@ -2052,7 +2054,7 @@
     footer .kontakt-block li.k-addr{ align-items: center; font-weight: 700; }
     footer .kontakt-block li.k-contact a{ font-weight: 700; }
     footer .kontakt-block li.k-addr svg{ margin-top: 0; }
-    footer h5{ margin-bottom: 14px; font-size: 10px }
+    footer h3{ margin-bottom: 14px; font-size: 10px }
     footer li{ font-size: 14px; margin-bottom: 8px }
     footer .ornament{ margin-bottom: 18px; font-size: 16px }
     footer .footer-follow{ margin-bottom: 20px; padding: 22px var(--gut) 20px; }
@@ -2600,28 +2602,28 @@
     <div class="columns">
       <div class="col reveal">
         <div class="num">i.</div>
-        <h4 class="italic">A history of the space</h4>
+        <h3 class="italic">A history of the space</h3>
         <p>
           St. Mark's Church is one of Zagreb's oldest and most iconic landmarks. Standing at the heart of the Upper Town, it has served for centuries as a place of worship, civic life, and many of the city's defining historical moments. Its Romanesque and Gothic architectural elements bear witness to the centuries and political transformations that have shaped Zagreb.
         </p>
       </div>
       <div class="col reveal" style="--rd: .1s">
         <div class="num">ii.</div>
-        <h4 class="italic">A roof as the symbol of Zagreb</h4>
+        <h3 class="italic">A roof as the symbol of Zagreb</h3>
         <p>
           One of Zagreb's most recognisable landmarks, the church's vibrant glazed-tile roof displays the coats of arms of the Triune Kingdom of Croatia, Slavonia and Dalmatia alongside that of the City of Zagreb. More than an architectural flourish, it reflects the city's historical identity and its enduring ties to the wider Central European cultural sphere.
         </p>
       </div>
       <div class="col reveal" style="--rd: .2s">
         <div class="num">iii.</div>
-        <h4 class="italic">Acoustics and sound</h4>
+        <h3 class="italic">Acoustics and sound</h3>
         <p>
           Shaped by soaring vaults, stone walls, and a rich, lingering resonance, the interior of St. Mark's Church offers an exceptional acoustic for sacred music. Polyphony unfolds with remarkable depth and clarity, while the church's reverberation allows each phrase to resonate beyond its final note. Here, voices and architecture become inseparable parts of the same musical experience.
         </p>
       </div>
       <div class="col reveal" style="--rd: .3s">
         <div class="num">iv.</div>
-        <h4 class="italic">The art within the church</h4>
+        <h3 class="italic">The art within the church</h3>
         <p>
           The interior brings together Gothic architecture and the work of some of Croatia's foremost twentieth-century artists. Murals by Jozo Kljaković enrich the walls, while sculptures by Ivan Meštrović lend the space a quiet monumentality. The result is an interior of exceptional artistic richness, where sacred architecture and modern Croatian art exist in remarkable harmony.
         </p>
@@ -2760,7 +2762,7 @@
 <footer>
         <div class="footer-follow">
       <div data-area="social">
-      <h5>Follow us</h5>
+      <h3>Follow us</h3>
       <ul class="social-icons">
       <li><a href="https://www.instagram.com/cantores_sancti_marci" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram · @cantores_sancti_marci">
       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
@@ -2806,7 +2808,7 @@
     <div class="ornament">✣  ·  ✣  ·  ✣</div>
     <div class="grid">
       <div class="kontakt-block" data-area="kontakt">
-        <h5>Contact</h5>
+        <h3>Contact</h3>
         <ul>
           <li class="k-contact k-addr">
             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
