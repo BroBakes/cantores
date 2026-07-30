@@ -2205,7 +2205,10 @@
   }
   .cc-actions button.cc-accept{ background:#c5a572; color:#1a1310 }
   .cc-actions button:hover{ background:#c5a572; color:#1a1310 }
-  #cc-settings-link{ cursor:pointer; background:none; border:none; padding:0; font:inherit; color:inherit }
+  #cc-settings-link{ cursor:pointer; background:none; border:none; padding:0; margin:0; font:inherit; font-family:inherit; font-size:inherit; letter-spacing:inherit; text-transform:inherit; line-height:inherit; vertical-align:baseline; appearance:none; -webkit-appearance:none; display:inline; box-sizing:content-box; color: var(--gold-deep) }
+  #cc-settings-link span{ border-bottom:1px solid rgba(138,107,60,0.3); transition: color .25s, border-color .25s }
+  #cc-settings-link:hover{ color: var(--burgundy) }
+  #cc-settings-link:hover span{ border-color: var(--burgundy) }
 </style>
 <script>
 window.dataLayer=window.dataLayer||[];
@@ -2796,7 +2799,7 @@ gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personali
     </div>
     <div class="meta">
       <div>© 2026 · Cantores Sancti Marci · Zagreb</div>
-      <div><a href="press-kit.html">Press kit</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <button id="cc-settings-link">Cookie Settings</button></div>
+      <div><a href="press-kit.html">Press kit</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <button id="cc-settings-link"><span>Cookie Settings</span></button></div>
     </div>
   </div>
 </footer>
