@@ -31,7 +31,7 @@
     var today = new Date(); today.setHours(0,0,0,0);
     var siteBase = 'https://cantoressanctimarci.hr';
     var pagePrefix = lang === 'en' ? siteBase + '/en' : siteBase;
-    var pageUrl = lang === 'en' ? siteBase + '/en.html#koncerti' : siteBase + '/#koncerti';
+    var pageUrl = lang === 'en' ? siteBase + '/en#koncerti' : siteBase + '/#koncerti';
     graph['@graph'] = graph['@graph'].filter(function(node){ return node['@type'] !== 'MusicEvent'; });
     data.forEach(function(ev){
       var d = new Date(ev.date + 'T00:00:00');
