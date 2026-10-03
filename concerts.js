@@ -58,7 +58,7 @@
   window.renderConcerts = function(lang){
     var list = document.getElementById('concerts-list');
     if (!list) return Promise.resolve([]);
-    return fetch('content/concerts.json').then(function(r){ return r.json(); }).then(function(data){
+    return fetch('content/concerts.json', {cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(data){
       var today = new Date(); today.setHours(0,0,0,0);
       data.forEach(function(ev){
         var el = renderConcert(ev, lang);
