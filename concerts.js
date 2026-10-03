@@ -6,7 +6,7 @@
     div.innerHTML =
       '<div class="date"><span class="d">' + ev.day + '.<em>' + ev.month + '.</em></span></div>' +
       '<div class="prog">' +
-        '<span class="tag ' + ev.tagClass + '">' + ev.tag[lang] + '</span>' +
+        (function(){ var t = ev.tag[lang], p = t.split(/\s*&middot;\s*/), long = p[1] && p.slice(1).join(' ').length > 14; return '<span class="tag ' + ev.tagClass + (long ? ' two' : '') + '">' + (long ? p[0] + ' &middot;<br>' + p.slice(1).join(' &middot; ') : t) + '</span>'; })() +
         '<h3>' + ev.title[lang] + '</h3>' +
         '<div class="composers">' + ev.description[lang] + '</div>' +
       '</div>' +
