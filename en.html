@@ -187,7 +187,7 @@
     padding: 12px 20px; border-radius: 4px;
     font-family: var(--serif); font-size: 15px; letter-spacing: 0.04em;
     text-decoration: none;
-    transform: translateY(-160%); transition: transform .2s ease;
+    transform: translateY(calc(-100% - 80px)); transition: transform .2s ease;
   }
   .skip-link:focus{ transform: translateY(0); outline: none }
   a:focus-visible, button:focus-visible,
@@ -2194,9 +2194,10 @@
     background:#0a0807; color:#e8ddc6; border-top:1px solid rgba(197,165,114,0.35);
     padding:20px clamp(20px,4vw,40px); display:flex; flex-wrap:wrap; gap:16px 28px;
     align-items:center; justify-content:space-between;
-    font-family: var(--serif); transform:translateY(110%); transition:transform .5s ease;
+    font-family: var(--serif); transform:translateY(110%); transition:transform .5s ease, visibility 0s linear .5s;
+    visibility:hidden; padding-bottom:calc(20px + env(safe-area-inset-bottom));
   }
-  .cc-banner.show{ transform:translateY(0) }
+  .cc-banner.show{ transform:translateY(0); visibility:visible; transition:transform .5s ease }
   .cc-banner p{ margin:0; font-size:14px; line-height:1.6; max-width:640px; color:#d8cdb5 }
   .cc-banner a{ color:#c5a572; text-decoration:underline }
   .cc-actions{ display:flex; gap:12px; flex-wrap:wrap }
