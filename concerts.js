@@ -8,7 +8,7 @@
       '<div class="prog">' +
         (function(){ var t = ev.tag[lang], p = t.split(/\s*&middot;\s*/), long = p[1] && p.slice(1).join(' ').length > 14; return '<span class="tag ' + ev.tagClass + (long ? ' two' : '') + '">' + (long ? p[0] + ' &middot;<br>' + p.slice(1).join(' &middot; ') : t) + '</span>'; })() +
         '<h3>' + ev.title[lang] + '</h3>' +
-        '<div class="composers">' + ev.description[lang] + '</div>' +
+        (function(){ var d = ev.description[lang], m = d.match(/^(.*?)\s*&middot;\s*((?:u suradnji|u organizaciji|in partnership)[^]*)$/i); if (!m) return '<div class="composers">' + d + '</div>'; return '<div class="composers">' + m[1] + '</div><div class="partner" style="display:flex;align-items:center;gap:10px;margin-top:10px;font-family:var(--serif);font-style:normal;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold,#6b4e26)"><span aria-hidden="true" style="flex:0 0 18px;height:1px;background:currentColor;opacity:.6"></span><span>' + m[2] + '</span></div>'; })() +
       '</div>' +
       '<div class="loc">' +
         '<div class="place italic">' + ev.venue[lang] + '</div>' +
